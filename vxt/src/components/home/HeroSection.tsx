@@ -2,8 +2,7 @@
 // Mobile: lighter, stacked layout with image card below text (per mobile design)
 
 const HERO_IMAGE_DESKTOP = '/barbara-burgess-v9jraQ0tM9A-unsplash.jpg'
-const HERO_IMAGE_MOBILE =
-  'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&q=80'
+const HERO_IMAGE_MOBILE = HERO_IMAGE_DESKTOP
 
 export default function HeroSection() {
   return (
