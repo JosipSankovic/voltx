@@ -1,0 +1,55 @@
+import { useParams, Link } from 'react-router-dom'
+import Header from '../components/layout/Header'
+import Footer from '../components/layout/Footer'
+import MobileCallBar from '../components/layout/MobileCallBar'
+import SubServiceHeroSection from '../components/subservice/SubServiceHeroSection'
+import SubServiceIntroSection from '../components/subservice/SubServiceIntroSection'
+import SubServiceProblemsSection from '../components/subservice/SubServiceProblemsSection'
+import SubServiceProcessSection from '../components/subservice/SubServiceProcessSection'
+import SubServiceCTASection from '../components/subservice/SubServiceCTASection'
+import { getServiceData } from '../data/serviceData'
+
+export default function SubServicePage() {
+  const { slug } = useParams<{ slug: string }>()
+  const service = getServiceData(slug ?? '')
+
+  if (!service) {
+    return (
+      <div className="min-h-screen bg-surface text-on-background font-body">
+        <Header />
+        <main className="pt-32 px-6 max-w-7xl mx-auto text-center py-20">
+          <h1 className="text-4xl font-headline font-bold text-primary mb-4">
+            Usluga nije pronađena
+          </h1>
+          <p className="text-on-surface-variant mb-8">
+            Tražena usluga ne postoji ili je premještena.
+          </p>
+          <Link
+            to="/usluge"
+            className="inline-flex items-center gap-2 bg-secondary-container text-white px-8 py-4 rounded-lg font-headline font-bold hover:bg-secondary transition-colors"
+          >
+            <span className="material-symbols-outlined">arrow_back</span>
+            Sve usluge
+          </Link>
+        </main>
+        <Footer />
+        <MobileCallBar />
+      </div>
+    )
+  }
+
+  return (
+    <div className="min-h-screen bg-surface text-on-background font-body">
+      <Header />
+      <main>
+        <SubServiceHeroSection service={service} />
+        <SubServiceIntroSection service={service} />
+        <SubServiceProblemsSection service={service} />
+        <SubServiceProcessSection />
+        <SubServiceCTASection service={service} />
+      </main>
+      <Footer />
+      <MobileCallBar />
+    </div>
+  )
+}

@@ -1,0 +1,62 @@
+const values = [
+  {
+    icon: 'bolt',
+    title: 'Brzina i Odziv',
+    desc: 'U svijetu servisa, vrijeme je ključno. Naš tim je obučen za brzo djelovanje bez kompromisa na kvaliteti.',
+  },
+  {
+    icon: 'precision_manufacturing',
+    title: 'Inženjerska Preciznost',
+    desc: 'Svaki popravak i svaka instalacija izvedena je prema najstrožim industrijskim standardima.',
+  },
+  {
+    icon: 'verified_user',
+    title: 'Apsolutna Sigurnost',
+    desc: 'Sigurnost korisnika i opreme je naš apsolutni prioritet u svakom koraku projektiranja i izvedbe.',
+  },
+  {
+    icon: 'security',
+    title: 'Jamstvo',
+    desc: 'Na sve naše radove i ugrađene materijale dajemo višegodišnje pismeno jamstvo.',
+  },
+]
+
+export default function AboutValuesSection() {
+  return (
+    <section className="py-24 bg-surface-container-low">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="mb-16 text-center max-w-2xl mx-auto">
+          <h2 className="text-4xl font-headline font-bold text-primary mb-4">
+            Vrijednosti koje nas pokreću
+          </h2>
+          <p className="text-on-surface-variant">
+            Beskompromisna kvaliteta i povjerenje su temelji svakog našeg
+            uspješnog projekta.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {values.map((v) => (
+            <div
+              key={v.title}
+              className="bg-surface-container-lowest p-8 rounded-xl shadow-sm border-b-2 border-transparent hover:border-secondary transition-all duration-300"
+            >
+              <div className="w-12 h-12 bg-secondary/10 flex items-center justify-center rounded-lg mb-6">
+                <span
+                  className="material-symbols-outlined text-secondary"
+                  style={{ fontVariationSettings: "'FILL' 1" }}
+                >
+                  {v.icon}
+                </span>
+              </div>
+              <h3 className="font-headline font-bold text-xl text-primary mb-3">
+                {v.title}
+              </h3>
+              <p className="text-on-surface-variant text-sm">{v.desc}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}
