@@ -1,8 +1,8 @@
 const steps = [
   {
     num: '1',
-    title: 'Poziv i dijagnoza',
-    desc: 'Telefonski prikupljamo ključne informacije o kvaru i pripremamo potrebnu opremu.',
+    title: 'Poziv i zakazivanje',
+    desc: 'Kontaktirate nas telefonom ili emailom, dogovaramo termin dolaska u najkraćem mogućem roku.',
     highlight: false,
   },
   {
@@ -13,8 +13,8 @@ const steps = [
   },
   {
     num: '3',
-    title: 'Stručni popravak',
-    desc: 'Vršimo popravak ili zamjenu dijelova isključivo originalnim komponentama.',
+    title: 'Dijagnoza i popravak',
+    desc: 'Na licu mjesta dijagnosticiramo kvar i vršimo popravak ili zamjenu potrebnih dijelova.',
     highlight: false,
   },
   {

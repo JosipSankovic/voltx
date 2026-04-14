@@ -22,7 +22,7 @@ const contactInfoItems = [
   {
     icon: 'schedule',
     label: 'Radno vrijeme',
-    primary: 'Pon - Pet: 08:00 - 17:00',
+    primary: 'Pon - Pet: 08:00 - 20:00',
     secondary: 'Subota: 08:00 - 13:00',
   },
 ]
