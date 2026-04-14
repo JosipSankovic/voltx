@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 
 export const serviceItems = [
   {
@@ -55,12 +54,11 @@ export default function ServiceHubGridSection() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {serviceItems.map((item) => (
-            <Link
+            <div
               key={item.slug}
-              to={`/usluge/${item.slug}`}
-              className="group bg-surface-container-lowest p-8 rounded-xl shadow-sm hover:shadow-md transition-all border-b-4 border-transparent hover:border-secondary hover:-translate-y-1"
+              className="bg-surface-container-lowest p-8 rounded-xl shadow-sm border-b-4 border-transparent"
             >
-              <div className="w-14 h-14 bg-surface-container-high rounded-lg flex items-center justify-center mb-6 text-primary group-hover:bg-primary-container group-hover:text-white transition-colors">
+              <div className="w-14 h-14 bg-surface-container-high rounded-lg flex items-center justify-center mb-6 text-primary">
                 <span className="material-symbols-outlined text-3xl">
                   {item.icon}
                 </span>
@@ -71,7 +69,7 @@ export default function ServiceHubGridSection() {
               <p className="text-on-surface-variant text-sm leading-relaxed">
                 {item.desc}
               </p>
-            </Link>
+            </div>
           ))}
         </div>
       </div>

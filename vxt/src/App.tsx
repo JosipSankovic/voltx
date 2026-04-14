@@ -4,7 +4,6 @@ import HomePage from './pages/HomePage'
 import AboutPage from './pages/AboutPage'
 import ContactPage from './pages/ContactPage'
 import ServiceHubPage from './pages/ServiceHubPage'
-import SubServicePage from './pages/SubServicePage'
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -23,7 +22,6 @@ export default function App() {
         <Route path="/o-nama" element={<AboutPage />} />
         <Route path="/kontakt" element={<ContactPage />} />
         <Route path="/usluge" element={<ServiceHubPage />} />
-        <Route path="/usluge/:slug" element={<SubServicePage />} />
       </Routes>
     </>
   )
