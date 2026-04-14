@@ -23,8 +23,7 @@ export default function ServiceHubIntroSection() {
             </p>
             <p>
               Naši tehničari posjeduju dugogodišnje iskustvo u dijagnostici i
-              popravcima najmodernijih tehnoloških rješenja. Koristimo isključivo
-              originalne rezervne dijelove kako bismo osigurali dugovječnost i
+              popravcima kako bismo osigurali dugovječnost i
               pouzdanost vaših uređaja.
             </p>
           </div>

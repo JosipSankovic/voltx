@@ -14,12 +14,6 @@ export const serviceItems = [
     desc: 'Popravak pećnica, konvektomata, štednjaka i industrijskih friteza.',
   },
   {
-    slug: 'barska-oprema',
-    icon: 'local_drink',
-    title: 'Barska oprema',
-    desc: 'Održavanje aparata za kavu, mlinaca, perilica čaša i miksera.',
-  },
-  {
     slug: 'perilice-posuda',
     icon: 'dishwasher_gen',
     title: 'Perilice posuđa',
@@ -29,7 +23,7 @@ export const serviceItems = [
     slug: 'rezervni-dijelovi',
     icon: 'settings',
     title: 'Rezervni dijelovi',
-    desc: 'Široka paleta originalnih dijelova na skladištu za brzu zamjenu.',
+    desc: 'Široka paleta rezervnih dijelova na skladištu za brzu zamjenu.',
   },
   {
     slug: 'preventivno-odrzavanje',

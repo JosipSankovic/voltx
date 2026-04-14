@@ -70,31 +70,6 @@ const services: ServiceData[] = [
     ctaText: 'Nazovite nas odmah — svaki sat zastoja košta.',
   },
   {
-    slug: 'barska-oprema',
-    title: 'Servis barske opreme',
-    categoryLabel: 'Barska oprema',
-    headline: 'Servis barske\nopreme',
-    heroImage: 'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=1600&q=80',
-    introHeading: 'Vrhunska kava počinje s ispravnim aparatom',
-    introText: [
-      'Aparat za kavu je srce svakog kafića. Volt X pruža redovito održavanje, dekalcifikaciju, zamjenu brtvila i servis mlinaca za kavne aparate svih proizvođača.',
-      'Servisiramo i perilice čaša, miksere, blendere i ostalu barsku opremu. Brz odaziv znači da vaš bar ne mora gubiti prihode zbog kvara.',
-    ],
-    whyItems: [
-      'Iskustvo s aparatima Dalla Corte, La Marzocco, Simonelli i dr.',
-      'Redovito preventivno čišćenje i kalibracija.',
-      'Dolazak unutar 2 sata u hitnim slučajevima.',
-    ],
-    problems: [
-      { icon: 'coffee_maker', title: 'Slab pritisak kave', desc: 'Začepljeni filteri, pumpa ili kamenac u kotlu.' },
-      { icon: 'water_drop', title: 'Curenje vode', desc: 'Istrošene brtve grupne glave ili ventila.' },
-      { icon: 'thermostat', title: 'Nestabilna temperatura', desc: 'Kvar bojlera, termostata ili PID regulatora.' },
-      { icon: 'settings', title: 'Mlinac ne melje ravnomjerno', desc: 'Istrošene žrvnjeve ili problem s dozerom.' },
-    ],
-    ctaTitle: 'Aparat za kavu ne radi?',
-    ctaText: 'Svaki sat bez kave košta. Nazovite odmah.',
-  },
-  {
     slug: 'perilice-posuda',
     title: 'Servis perilica posuđa',
     categoryLabel: 'Perilice posuđa',
