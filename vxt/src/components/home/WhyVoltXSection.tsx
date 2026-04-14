@@ -1,7 +1,7 @@
 // "Why Volt X" section – dark navy background on desktop with image
 // Mobile: light section with 2x2 icon grid
 
-const TECHNICIAN_IMAGE = '/pexels-bulat843-1243575272-34054468.jpg'
+const TECHNICIAN_IMAGE = '/pexels-bulat843-1243575272-34054468.webp'
 
 interface Feature {
   icon: string

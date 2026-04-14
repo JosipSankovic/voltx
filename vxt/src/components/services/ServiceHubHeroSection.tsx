@@ -5,7 +5,7 @@ export default function ServiceHubHeroSection() {
       <header className="hidden md:block relative pt-32 pb-20 md:pt-48 md:pb-40 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="/pexels-bulat843-1243575272-32588551.jpg"
+            src="/pexels-bulat843-1243575272-32588551.webp"
             alt="Ugostiteljska oprema"
             className="w-full h-full object-cover brightness-[0.4]"
           />
@@ -65,7 +65,7 @@ export default function ServiceHubHeroSection() {
         </div>
         <div className="mt-16 w-full max-w-6xl mx-auto rounded-xl overflow-hidden shadow-2xl relative aspect-[21/9]">
           <img
-            src="/pexels-bulat843-1243575272-32588551.jpg"
+            src="/pexels-bulat843-1243575272-32588551.webp"
             alt="Ugostiteljska kuhinja"
             className="w-full h-full object-cover"
           />

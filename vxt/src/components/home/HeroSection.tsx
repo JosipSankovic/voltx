@@ -1,7 +1,7 @@
 // Hero section – desktop: full-screen with dark overlay image + large headline
 // Mobile: lighter, stacked layout with image card below text (per mobile design)
 
-const HERO_IMAGE_DESKTOP = '/barbara-burgess-v9jraQ0tM9A-unsplash.jpg'
+const HERO_IMAGE_DESKTOP = '/barbara-burgess-v9jraQ0tM9A-unsplash.webp'
 const HERO_IMAGE_MOBILE = HERO_IMAGE_DESKTOP
 
 export default function HeroSection() {
