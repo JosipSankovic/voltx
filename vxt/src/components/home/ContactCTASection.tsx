@@ -23,7 +23,7 @@ export default function ContactCTASection() {
             <InfoCard
               icon="mail"
               title="Email"
-              content="info@volt-x.hr"
+              content="info@vxt.hr"
             />
             <InfoCard
               icon="schedule"

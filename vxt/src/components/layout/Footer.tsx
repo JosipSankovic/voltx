@@ -31,12 +31,6 @@ export default function Footer() {
             Usluge
           </Link>
           <Link
-            to="/o-nama"
-            className="text-slate-400 hover:text-white transition-colors font-body text-sm"
-          >
-            O nama
-          </Link>
-          <Link
             to="/kontakt"
             className="text-slate-400 hover:text-white transition-colors font-body text-sm"
           >

@@ -5,7 +5,7 @@ export default function ServiceHubHeroSection() {
       <header className="hidden md:block relative pt-32 pb-20 md:pt-48 md:pb-40 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1600&q=80"
+            src="/pexels-bulat843-1243575272-32588551.jpg"
             alt="Ugostiteljska oprema"
             className="w-full h-full object-cover brightness-[0.4]"
           />
@@ -31,10 +31,10 @@ export default function ServiceHubHeroSection() {
               održavanje i hitne popravke industrijskih sustava.
             </p>
             <a
-              href="#kontakt"
+              href="/kontakt"
               className="inline-flex items-center px-10 py-5 bg-secondary-container text-white font-headline font-bold text-lg rounded-md shadow-[0_20px_40px_rgba(171,53,0,0.3)] transition-transform hover:scale-[1.02] active:scale-[0.98]"
             >
-              Zatražite ponudu
+              Zatražite uslugu
             </a>
           </div>
         </div>
@@ -65,7 +65,7 @@ export default function ServiceHubHeroSection() {
         </div>
         <div className="mt-16 w-full max-w-6xl mx-auto rounded-xl overflow-hidden shadow-2xl relative aspect-[21/9]">
           <img
-            src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80"
+            src="/pexels-bulat843-1243575272-32588551.jpg"
             alt="Ugostiteljska kuhinja"
             className="w-full h-full object-cover"
           />

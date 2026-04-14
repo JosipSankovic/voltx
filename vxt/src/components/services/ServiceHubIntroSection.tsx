@@ -46,7 +46,7 @@ export default function ServiceHubIntroSection() {
         <div className="order-1 md:order-2 relative">
           <div className="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl">
             <img
-              src="https://images.unsplash.com/photo-1581092921461-39b9d08a9b21?w=800&q=80"
+              src="/pexels-bulat843-1243575272-34054468.jpg"
               alt="Tehničar u akciji"
               className="w-full h-full object-cover"
             />

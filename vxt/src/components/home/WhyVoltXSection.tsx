@@ -13,7 +13,7 @@ const desktopFeatures: Feature[] = [
   {
     icon: 'verified',
     title: 'Kvaliteta i pouzdanost',
-    description: 'Koristimo isključivo originalne rezervne dijelove najviše klase.',
+    description: 'Surađujemo s renomiranim proizvođačima, a tehničari koriste najmoderniju opremu i tehnike.',
   },
   {
     icon: 'speed',
@@ -28,7 +28,7 @@ const desktopFeatures: Feature[] = [
   {
     icon: 'tune',
     title: 'Prilagođena rješenja',
-    description: 'Svaki klijent dobiva plan održavanja krojen prema opsegu rada.',
+    description: 'Svako rješenje prilagođavamo vašim specifičnim potrebama – bez obzira na veličinu poslovanja.',
   },
 ]
 

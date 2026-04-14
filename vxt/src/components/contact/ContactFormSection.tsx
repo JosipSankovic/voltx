@@ -16,7 +16,7 @@ const contactInfoItems = [
   {
     icon: 'mail',
     label: 'E-mail',
-    primary: 'servis@voltx.hr',
+    primary: 'info@vxt.hr',
     secondary: null,
   },
   {
