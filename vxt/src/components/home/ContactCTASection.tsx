@@ -30,7 +30,7 @@ export default function ContactCTASection() {
               title="Radno vrijeme"
               content={
                 <>
-                  Pon - Pet: 08:00 - 16:00
+                  Pon - Pet: 08:00 - 20:00
                   <br />
                   Hitne intervencije: 00-24
                 </>

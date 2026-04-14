@@ -15,11 +15,11 @@ export default function Header() {
     <nav className="fixed top-0 w-full z-50 glass-nav shadow-sm">
       <div className="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
         {/* Logo */}
-        <Link
-          to="/"
-          className="text-2xl font-black text-slate-900 tracking-tighter font-headline"
-        >
-          Volt X
+        <Link to="/" className="flex items-center gap-2">
+          <img src="/logo_2.png" alt="" className="h-8 w-auto" />
+          <span className="text-2xl font-black text-slate-900 tracking-tighter font-headline">
+            Volt X
+          </span>
         </Link>
 
         {/* Desktop Nav */}

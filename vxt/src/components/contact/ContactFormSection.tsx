@@ -141,7 +141,7 @@ export default function ContactFormSection() {
                 Radno Vrijeme
               </h3>
               <p className="text-on-surface-variant leading-relaxed">
-                Pon - Pet: 08:00 - 17:00
+                Pon - Pet: 08:00 - 20:00
                 <br />
                 Hitne intervencije: 24/7
               </p>
