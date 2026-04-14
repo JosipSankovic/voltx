@@ -6,9 +6,7 @@ export default function Footer() {
       <div className="grid grid-cols-1 md:grid-cols-4 gap-12 px-6 max-w-7xl mx-auto">
         {/* Brand */}
         <div>
-          <span className="text-xl font-bold text-white mb-4 block font-headline">
-            Volt X
-          </span>
+          <img src="/logo.png" alt="Volt X" className="h-8 w-auto mb-4" />
           <p className="text-slate-400 font-body text-sm leading-relaxed">
             Profesionalni servis ugostiteljske opreme i kućanskih aparata na
             području Zadra i okolice.
