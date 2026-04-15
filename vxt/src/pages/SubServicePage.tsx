@@ -1,4 +1,5 @@
 import { useParams, Link } from 'react-router-dom'
+import { Helmet } from 'react-helmet-async'
 import Header from '../components/layout/Header'
 import Footer from '../components/layout/Footer'
 import MobileCallBar from '../components/layout/MobileCallBar'
@@ -16,6 +17,10 @@ export default function SubServicePage() {
   if (!service) {
     return (
       <div className="min-h-screen bg-surface text-on-background font-body">
+        <Helmet>
+          <title>Usluga nije pronađena | Volt X</title>
+          <meta name="robots" content="noindex" />
+        </Helmet>
         <Header />
         <main className="pt-32 px-6 max-w-7xl mx-auto text-center py-20">
           <h1 className="text-4xl font-headline font-bold text-primary mb-4">
@@ -40,6 +45,15 @@ export default function SubServicePage() {
 
   return (
     <div className="min-h-screen bg-surface text-on-background font-body">
+      <Helmet>
+        <title>{service.title} | Volt X – Zadar</title>
+        <meta
+          name="description"
+          content={service.introText[0].slice(0, 155) + (service.introText[0].length > 155 ? '...' : '')}
+        />
+        <link rel="canonical" href={`https://vxt.hr/usluge/${service.slug}`} />
+        <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+      </Helmet>
       <Header />
       <main>
         <SubServiceHeroSection service={service} />

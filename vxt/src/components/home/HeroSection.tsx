@@ -78,9 +78,9 @@ export default function HeroSection() {
           </div>
 
           {/* Headline */}
-          <h1 className="text-[2.75rem] leading-[1.1] font-bold tracking-tighter font-headline text-primary">
+          <p className="text-[2.75rem] leading-[1.1] font-bold tracking-tighter font-headline text-primary">
             Servis ugostiteljske opreme i kućanskih aparata u Zadru
-          </h1>
+          </p>
 
           {/* Sub */}
           <p className="text-lg text-on-surface-variant leading-relaxed max-w-xl">

@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async'
 import Header from '../components/layout/Header'
 import Footer from '../components/layout/Footer'
 import MobileCallBar from '../components/layout/MobileCallBar'
@@ -10,6 +11,12 @@ import ServiceHubCTASection from '../components/services/ServiceHubCTASection'
 export default function ServiceHubPage() {
   return (
     <div className="min-h-screen bg-surface text-on-background font-body">
+      <Helmet>
+        <title>Usluge | Volt X – Servis opreme u Zadru</title>
+        <meta name="description" content="Servis rashladnih sustava, termičke opreme, perilica posuđa i kućanskih aparata. Preventivno održavanje i rezervni dijelovi za ugostiteljsku opremu u Zadru." />
+        <link rel="canonical" href="https://vxt.hr/usluge" />
+        <meta name="robots" content="index, follow" />
+      </Helmet>
       <Header />
       <main>
         <ServiceHubHeroSection />

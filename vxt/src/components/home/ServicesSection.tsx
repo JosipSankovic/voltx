@@ -1,5 +1,7 @@
 // Services bento grid (desktop) / stacked cards (mobile)
 
+import { Link } from 'react-router-dom'
+
 interface ServiceCard {
   icon: string
   title: string
@@ -27,14 +29,14 @@ const services: ServiceCard[] = [
     title: 'Servis ugostiteljske opreme',
     description:
       'Hitne popravke i redovno održavanje svih vrsta profesionalnih uređaja.',
-    href: '/usluge',
+    href: '/usluge/termicka-oprema',
   },
   {
     icon: 'home_repair_service',
     title: 'Servis kućanskih aparata',
     description:
       'Brz i pouzdan servis perilica, pećnica i ostale bijele tehnike u Vašem domu.',
-    href: '/usluge',
+    href: '/usluge/perilice-rublja',
   },
 ]
 
@@ -52,14 +54,14 @@ const mobileServices: ServiceCard[] = [
     title: 'Kućanski Aparati',
     description:
       'Popravak perilica rublja, sušilica, hladnjaka i pećnica vodećih svjetskih brendova s originalnim rezervnim dijelovima.',
-    href: '/usluge',
+    href: '/usluge/perilice-rublja',
   },
   {
     icon: 'ac_unit',
     title: 'Rashladni Sustavi',
     description:
       'Montaža i servis klima uređaja te rashladnih komora za komercijalnu i privatnu upotrebu uz jamstvo na rad.',
-    href: '/usluge',
+    href: '/usluge/rashladni-sustavi',
   },
 ]
 
@@ -121,15 +123,15 @@ function DesktopServiceCard({ icon, title, description, href }: ServiceCard) {
       <p className="text-on-surface-variant text-sm leading-relaxed mb-6">
         {description}
       </p>
-      <a
-        href={href}
+      <Link
+        to={href}
         className="inline-flex items-center text-secondary font-bold text-sm gap-2 hover:gap-3 transition-all"
       >
         Saznajte više{' '}
         <span className="material-symbols-outlined text-base leading-none">
           arrow_forward
         </span>
-      </a>
+      </Link>
     </div>
   )
 }
@@ -146,15 +148,15 @@ function MobileServiceCard({ icon, title, description, href }: ServiceCard) {
       <p className="text-on-surface-variant leading-relaxed mb-6">
         {description}
       </p>
-      <a
-        href={href}
+      <Link
+        to={href}
         className="flex items-center gap-2 text-primary font-bold text-sm uppercase tracking-wider"
       >
         <span>Saznaj više</span>
         <span className="material-symbols-outlined text-sm leading-none">
           arrow_forward
         </span>
-      </a>
+      </Link>
     </div>
   )
 }
