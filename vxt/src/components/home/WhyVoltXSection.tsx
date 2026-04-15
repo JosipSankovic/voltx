@@ -13,7 +13,7 @@ const desktopFeatures: Feature[] = [
   {
     icon: 'verified',
     title: 'Kvaliteta i pouzdanost',
-    description: 'Surađujemo s renomiranim proizvođačima, a tehničari koriste najmoderniju opremu i tehnike.',
+    description: 'Koristimo isključivo originalne rezervne dijelove najviše klase.',
   },
   {
     icon: 'speed',
