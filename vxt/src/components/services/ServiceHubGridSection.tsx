@@ -16,7 +16,7 @@ export const serviceItems = [
     slug: 'perilice-posuda',
     icon: 'dishwasher_gen',
     title: 'Perilice posuđa',
-    desc: 'Ugradnja dozatora, čišćenje kamenca i popravak elektronike.',
+    desc: 'Ugradnja dozatora, čišćenje kamenca, ...',
   },
   {
     slug: 'rezervni-dijelovi',
