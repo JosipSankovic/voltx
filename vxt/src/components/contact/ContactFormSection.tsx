@@ -4,8 +4,8 @@ const contactInfoItems = [
   {
     icon: 'location_on',
     label: 'Adresa',
-    primary: 'Ulica bana Jelačića 20',
-    secondary: '23000 Zadar, Hrvatska',
+    primary: 'Ulica XI/1',
+    secondary: '23231 Petrčane, Hrvatska',
   },
   {
     icon: 'call',
@@ -128,9 +128,9 @@ export default function ContactFormSection() {
                 Naša Lokacija
               </h3>
               <p className="text-on-surface-variant leading-relaxed">
-                Ulica bana Jelačića 20,
+                Ulica XI/1,
                 <br />
-                23000 Zadar, Hrvatska
+                23231 Petrčane, Hrvatska
               </p>
             </div>
             <div className="bg-surface-container-low p-8 rounded-xl">

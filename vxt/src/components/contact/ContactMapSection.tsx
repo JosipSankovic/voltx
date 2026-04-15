@@ -3,7 +3,7 @@ export default function ContactMapSection() {
     <section className="w-full h-[400px] md:h-[500px] relative overflow-hidden">
       <iframe
         title="Volt X lokacija"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d45445.78!2d15.2314!3d44.1194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4761f50043fdf947%3A0x2cf2f6e449218025!2sZadar!5e0!3m2!1shr!2shr!4v1"
+        src="https://maps.google.com/maps?q=Petr%C4%8Dane+Ulica+XI%2F1,+23231&output=embed"
         width="100%"
         height="100%"
         style={{ border: 0 }}
