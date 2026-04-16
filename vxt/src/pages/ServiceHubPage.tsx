@@ -26,7 +26,7 @@ export default function ServiceHubPage() {
         })}</script>
       </Helmet>
       <Header />
-      <main>
+      <main id="main-content">
         <ServiceHubHeroSection />
         <ServiceHubIntroSection />
         <ServiceHubGridSection />

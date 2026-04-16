@@ -19,7 +19,7 @@ export default function HomePage() {
       </Helmet>
       <Header />
 
-      <main>
+      <main id="main-content">
         <HeroSection />
         <ServicesSection />
         <WhyVoltXSection />

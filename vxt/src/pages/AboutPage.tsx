@@ -18,7 +18,7 @@ export default function AboutPage() {
         <meta name="robots" content="index, follow" />
       </Helmet>
       <Header />
-      <main>
+      <main id="main-content">
         <AboutHeroSection />
         <AboutStorySection />
         <AboutValuesSection />

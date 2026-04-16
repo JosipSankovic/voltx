@@ -8,6 +8,7 @@ export default function ServiceHubHeroSection() {
             src="/pexels-bulat843-1243575272-32588551.webp"
             alt="Ugostiteljska oprema"
             className="w-full h-full object-cover brightness-[0.4]"
+            loading="lazy"
           />
           <div className="absolute inset-0 bg-gradient-to-br from-primary to-transparent opacity-60" />
         </div>
@@ -68,6 +69,7 @@ export default function ServiceHubHeroSection() {
             src="/pexels-bulat843-1243575272-32588551.webp"
             alt="Ugostiteljska kuhinja"
             className="w-full h-full object-cover"
+            loading="lazy"
           />
           <div className="absolute inset-0 bg-primary/20" />
         </div>

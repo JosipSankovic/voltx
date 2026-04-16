@@ -7,6 +7,7 @@ import SubServiceHeroSection from '../components/subservice/SubServiceHeroSectio
 import SubServiceIntroSection from '../components/subservice/SubServiceIntroSection'
 import SubServiceProblemsSection from '../components/subservice/SubServiceProblemsSection'
 import SubServiceProcessSection from '../components/subservice/SubServiceProcessSection'
+import SubServiceFAQSection from '../components/subservice/SubServiceFAQSection'
 import SubServiceCTASection from '../components/subservice/SubServiceCTASection'
 import { getServiceData } from '../data/serviceData'
 
@@ -22,7 +23,7 @@ export default function SubServicePage() {
           <meta name="robots" content="noindex" />
         </Helmet>
         <Header />
-        <main className="pt-32 px-6 max-w-7xl mx-auto text-center py-20">
+        <main id="main-content" className="pt-32 px-6 max-w-7xl mx-auto text-center py-20">
           <h1 className="text-4xl font-headline font-bold text-primary mb-4">
             Usluga nije pronađena
           </h1>
@@ -81,11 +82,12 @@ export default function SubServicePage() {
         })}</script>
       </Helmet>
       <Header />
-      <main>
+      <main id="main-content">
         <SubServiceHeroSection service={service} />
         <SubServiceIntroSection service={service} />
         <SubServiceProblemsSection service={service} />
         <SubServiceProcessSection />
+        <SubServiceFAQSection service={service} />
         <SubServiceCTASection service={service} />
       </main>
       <Footer />

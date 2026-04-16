@@ -109,6 +109,7 @@ export default function WhyVoltXSection() {
                   src={TECHNICIAN_IMAGE}
                   alt="Stručni tehničar pri radu na profesionalnoj opremi"
                   className="w-full h-full object-cover"
+                  loading="lazy"
                 />
               </div>
               <div className="absolute -bottom-8 -left-8 bg-secondary-container p-8 rounded-xl shadow-2xl -rotate-3">

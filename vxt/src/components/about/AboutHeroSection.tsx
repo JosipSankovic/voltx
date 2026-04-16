@@ -8,6 +8,7 @@ export default function AboutHeroSection() {
             src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=1600&q=80"
             alt="Volt X tim u radionici"
             className="w-full h-full object-cover"
+            loading="lazy"
           />
           <div className="absolute inset-0 bg-primary/60 mix-blend-multiply" />
         </div>

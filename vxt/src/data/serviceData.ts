@@ -4,6 +4,11 @@ export interface Problem {
   desc: string
 }
 
+export interface FAQ {
+  question: string
+  answer: string
+}
+
 export interface ServiceData {
   slug: string
   title: string
@@ -16,6 +21,7 @@ export interface ServiceData {
   problems: Problem[]
   ctaTitle: string
   ctaText: string
+  faqs?: FAQ[]
 }
 
 const services: ServiceData[] = [
@@ -43,6 +49,11 @@ const services: ServiceData[] = [
     ],
     ctaTitle: 'Kvar na rashladnom uređaju?',
     ctaText: 'Kontaktirajte nas odmah i osigurajte sigurnost vaših namirnica.',
+    faqs: [
+      { question: 'Koliko traje servis rashladnog uređaja?', answer: 'Standardni servis traje 1-3 sata, ovisno o složenosti kvara. Na licu mjesta dobivate procjenu odmah.' },
+      { question: 'Koristite li originalne rezervne dijelove?', answer: 'Da, koristimo isključivo originalne ili certificirane OEM dijelove s jamstvom.' },
+      { question: 'Postoji li jamstvo na popravak?', answer: 'Da, jamčimo 6 mjeseci na sve obavljene radove i ugrađene dijelove.' },
+    ],
   },
   {
     slug: 'termicka-oprema',
@@ -68,6 +79,11 @@ const services: ServiceData[] = [
     ],
     ctaTitle: 'Problemi s pećnicom ili fritezom?',
     ctaText: 'Nazovite nas odmah — svaki sat zastoja košta.',
+    faqs: [
+      { question: 'Servisirate li sve marke termičke opreme?', answer: 'Da, radimo na svim vodećim markama poput Rational, Electrolux, Convotherm, Lainox, Unox i mnogim drugima.' },
+      { question: 'Možete li doći na teren izvan Zadra?', answer: 'Da, pokrivamo cijelu Zadarsku županiju — od otoka do zaleđa. Dolazak dogovaramo prema prioritetu hitnosti.' },
+      { question: 'Koliko brzo dolazite kod hitnih kvarova?', answer: 'Za hitne intervencije trudimo se doći isti dan, a najčešće unutar nekoliko sati od poziva.' },
+    ],
   },
   {
     slug: 'perilice-posuda',
@@ -93,6 +109,11 @@ const services: ServiceData[] = [
     ],
     ctaTitle: 'Perilica posuđa stala?',
     ctaText: 'Brz servis sprječava zastoj u radu kuhinje.',
+    faqs: [
+      { question: 'Servisirate li profesionalne perilice u restoranima?', answer: 'Da, specijalizirani smo za industrijske perilice posuđa marki Meiko, Winterhalter, Hobart, Colged i drugih.' },
+      { question: 'Rješavate li problem kamenca?', answer: 'Da, vršimo dekalcifikaciju uređaja i savjetujemo o regeneraciji omekšivača vode kako biste izbjegli ponovne probleme.' },
+      { question: 'Možete li servisirati perilicu bez odvoza?', answer: 'U pravilu sve radove obavljamo na terenu, bez potrebe za odvozom uređaja iz vašeg objekta.' },
+    ],
   },
   {
     slug: 'rezervni-dijelovi',

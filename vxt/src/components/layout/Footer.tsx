@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-12 px-6 max-w-7xl mx-auto">
         {/* Brand */}
         <div>
-          <img src="/logo.webp" alt="Volt X" className="h-8 w-auto mb-4" />
+          <img src="/logo.webp" alt="Volt X" className="h-8 w-auto mb-4" loading="lazy" />
           <p className="text-slate-400 font-body text-sm leading-relaxed">
             Profesionalni servis ugostiteljske opreme i kućanskih aparata na
             području Zadra i okolice.

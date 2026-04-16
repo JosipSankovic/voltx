@@ -31,6 +31,7 @@ export default function ContactHeroSection() {
               src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=800&q=80"
               alt="Električni panel"
               className="w-full h-full object-cover"
+              loading="lazy"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-primary-container via-transparent to-transparent" />
           </div>

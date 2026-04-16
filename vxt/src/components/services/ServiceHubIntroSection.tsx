@@ -48,6 +48,7 @@ export default function ServiceHubIntroSection() {
               src="/pexels-bulat843-1243575272-34054468.webp"
               alt="Tehničar u akciji"
               className="w-full h-full object-cover"
+              loading="lazy"
             />
           </div>
           <div className="absolute -bottom-6 -left-6 bg-primary-container p-8 text-white max-w-[240px] rounded-lg hidden md:block">

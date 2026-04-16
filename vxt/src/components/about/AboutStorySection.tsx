@@ -36,6 +36,7 @@ export default function AboutStorySection() {
               src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=800&q=80"
               alt="Tehničar na djelu"
               className="w-full aspect-[4/5] object-cover rounded-xl shadow-xl"
+              loading="lazy"
             />
           </div>
         </div>
@@ -47,6 +48,7 @@ export default function AboutStorySection() {
               src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=800&q=80"
               alt="Volt X Inženjering"
               className="w-full h-[300px] object-cover"
+              loading="lazy"
             />
           </div>
           <div className="grid grid-cols-1 gap-8 items-start">

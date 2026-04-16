@@ -16,7 +16,7 @@ export default function ContactPage() {
         <meta name="robots" content="index, follow" />
       </Helmet>
       <Header />
-      <main>
+      <main id="main-content">
         <ContactHeroSection />
         <ContactFormSection />
         <ContactMapSection />

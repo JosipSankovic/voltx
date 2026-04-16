@@ -17,6 +17,7 @@ export default function SubServiceHeroSection({ service }: Props) {
             src={service.heroImage}
             alt={service.title}
             className="w-full h-full object-cover opacity-40"
+            fetchPriority="high"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/80 to-transparent" />
         </div>
@@ -74,6 +75,7 @@ export default function SubServiceHeroSection({ service }: Props) {
               src={service.heroImage}
               alt={service.title}
               className="w-full h-full object-cover"
+              fetchPriority="high"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent" />
           </div>

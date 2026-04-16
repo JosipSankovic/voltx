@@ -44,6 +44,7 @@ export default function AboutServiceAreaSection() {
               src="https://images.unsplash.com/photo-1569336415962-a4bd9f69c07a?w=800&q=80"
               alt="Karta Zadarske županije"
               className="w-full h-full object-cover grayscale opacity-60"
+              loading="lazy"
             />
             <div className="absolute inset-0 bg-primary/20" />
             <div className="absolute inset-0 flex items-center justify-center">
