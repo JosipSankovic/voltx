@@ -53,6 +53,32 @@ export default function SubServicePage() {
         />
         <link rel="canonical" href={`https://vxt.hr/usluge/${service.slug}`} />
         <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": service.title,
+          "description": service.introText[0],
+          "provider": {
+            "@type": "LocalBusiness",
+            "name": "Volt X",
+            "url": "https://vxt.hr"
+          },
+          "areaServed": {
+            "@type": "City",
+            "name": "Zadar"
+          },
+          "serviceType": service.categoryLabel,
+          "url": `https://vxt.hr/usluge/${service.slug}`
+        })}</script>
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Početna", "item": "https://vxt.hr/" },
+            { "@type": "ListItem", "position": 2, "name": "Usluge", "item": "https://vxt.hr/usluge" },
+            { "@type": "ListItem", "position": 3, "name": service.title, "item": `https://vxt.hr/usluge/${service.slug}` }
+          ]
+        })}</script>
       </Helmet>
       <Header />
       <main>

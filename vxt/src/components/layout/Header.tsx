@@ -4,6 +4,7 @@ import { Link, NavLink } from 'react-router-dom'
 const navLinks = [
   { to: '/', label: 'Početna', end: true },
   { to: '/usluge', label: 'Usluge', end: false },
+  { to: '/o-nama', label: 'O nama', end: true },
   { to: '/kontakt', label: 'Kontakt', end: true },
 ]
 

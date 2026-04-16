@@ -16,6 +16,14 @@ export default function ServiceHubPage() {
         <meta name="description" content="Servis rashladnih sustava, termičke opreme, perilica posuđa i kućanskih aparata. Preventivno održavanje i rezervni dijelovi za ugostiteljsku opremu u Zadru." />
         <link rel="canonical" href="https://vxt.hr/usluge" />
         <meta name="robots" content="index, follow" />
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Početna", "item": "https://vxt.hr/" },
+            { "@type": "ListItem", "position": 2, "name": "Usluge", "item": "https://vxt.hr/usluge" }
+          ]
+        })}</script>
       </Helmet>
       <Header />
       <main>

@@ -36,6 +36,12 @@ export default function Footer() {
           >
             Kontakt
           </Link>
+          <Link
+            to="/privatnost"
+            className="text-slate-400 hover:text-white transition-colors font-body text-sm"
+          >
+            Politika privatnosti
+          </Link>
         </div>
 
         {/* Services */}
@@ -44,22 +50,34 @@ export default function Footer() {
             Usluge
           </span>
           <Link
-            to="/usluge"
+            to="/usluge/rashladni-sustavi"
             className="text-slate-400 hover:text-white transition-colors font-body text-sm"
           >
-            Prodaja opreme
+            Rashladni sustavi
           </Link>
           <Link
-            to="/usluge"
+            to="/usluge/termicka-oprema"
             className="text-slate-400 hover:text-white transition-colors font-body text-sm"
           >
-            Servis i popravak
+            Termička oprema
           </Link>
           <Link
-            to="/usluge"
+            to="/usluge/perilice-posuda"
             className="text-slate-400 hover:text-white transition-colors font-body text-sm"
           >
-            Montaža sustava
+            Perilice posuđa
+          </Link>
+          <Link
+            to="/usluge/preventivno-odrzavanje"
+            className="text-slate-400 hover:text-white transition-colors font-body text-sm"
+          >
+            Preventivno održavanje
+          </Link>
+          <Link
+            to="/usluge/perilice-rublja"
+            className="text-slate-400 hover:text-white transition-colors font-body text-sm"
+          >
+            Servis kućanskih aparata
           </Link>
         </div>
 
