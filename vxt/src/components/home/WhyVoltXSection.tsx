@@ -1,7 +1,43 @@
-// "Why Volt X" section – dark navy background on desktop with image
-// Mobile: light section with 2x2 icon grid
+import { useEffect, useRef, useState } from 'react'
 
 const TECHNICIAN_IMAGE = '/pexels-bulat843-1243575272-34054468.webp'
+
+function useAnimatedCounter(target: number, duration = 1600) {
+  const [count, setCount] = useState(0)
+  const [started, setStarted] = useState(false)
+  const ref = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    const el = ref.current
+    if (!el) return
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setStarted(true)
+          observer.disconnect()
+        }
+      },
+      { threshold: 0.5 }
+    )
+    observer.observe(el)
+    return () => observer.disconnect()
+  }, [])
+
+  useEffect(() => {
+    if (!started) return
+    let start: number | undefined
+    const step = (ts: number) => {
+      if (!start) start = ts
+      const progress = Math.min((ts - start) / duration, 1)
+      const eased = 1 - Math.pow(1 - progress, 3)
+      setCount(Math.floor(eased * target))
+      if (progress < 1) requestAnimationFrame(step)
+    }
+    requestAnimationFrame(step)
+  }, [started, target, duration])
+
+  return [count, ref] as const
+}
 
 interface Feature {
   icon: string
@@ -62,6 +98,9 @@ const mobileFeatures: MobileFeature[] = [
 ]
 
 export default function WhyVoltXSection() {
+  const [yearsCount, yearsRef] = useAnimatedCounter(10)
+  const [clientsCount, clientsRef] = useAnimatedCounter(500)
+
   return (
     <>
       {/* ── DESKTOP ───────────────────────────────────────────────────── */}
@@ -102,8 +141,8 @@ export default function WhyVoltXSection() {
               </div>
             </div>
 
-            {/* Right: image + floating stat badge */}
-            <div className="relative">
+            {/* Right: image + animated counter strip */}
+            <div className="relative pb-16">
               <div className="aspect-square bg-surface-container-low rounded-2xl overflow-hidden shadow-2xl rotate-3">
                 <img
                   src={TECHNICIAN_IMAGE}
@@ -112,11 +151,38 @@ export default function WhyVoltXSection() {
                   loading="lazy"
                 />
               </div>
-              <div className="absolute -bottom-8 -left-8 bg-secondary-container p-8 rounded-xl shadow-2xl -rotate-3">
-                <div className="text-white font-headline">
-                  <div className="text-4xl font-black">10+</div>
-                  <div className="text-sm font-bold opacity-80">
+
+              {/* Split animated counter strip */}
+              <div className="absolute bottom-0 left-0 right-0 flex shadow-2xl">
+                <div
+                  ref={yearsRef}
+                  className="flex-1 px-5 py-4"
+                  style={{
+                    background: '#fe6a34',
+                    borderRadius: '12px 0 0 12px',
+                    borderRight: '1px solid rgba(255,255,255,0.1)',
+                  }}
+                >
+                  <div className="font-headline text-3xl font-black text-white leading-none">
+                    {yearsCount}+
+                  </div>
+                  <div className="font-body text-[11px] font-semibold text-white/70 mt-1">
                     Godina iskustva
+                  </div>
+                </div>
+                <div
+                  ref={clientsRef}
+                  className="flex-1 px-5 py-4"
+                  style={{
+                    background: '#0a2540',
+                    borderRadius: '0 12px 12px 0',
+                  }}
+                >
+                  <div className="font-headline text-3xl font-black text-white leading-none">
+                    {clientsCount}+
+                  </div>
+                  <div className="font-body text-[11px] font-semibold text-white/70 mt-1">
+                    Zadovoljnih klijenata
                   </div>
                 </div>
               </div>
@@ -126,9 +192,9 @@ export default function WhyVoltXSection() {
       </section>
 
       {/* ── MOBILE ────────────────────────────────────────────────────── */}
-      <section className="md:hidden py-20 px-6 max-w-7xl mx-auto">
+      <section className="md:hidden py-20 px-6 max-w-7xl mx-auto dark:bg-slate-900">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold font-headline text-primary mb-4">
+          <h2 className="text-3xl font-bold font-headline text-primary dark:text-slate-100 mb-4">
             Zašto odabrati Volt X?
           </h2>
           <div className="h-1 w-20 bg-secondary mx-auto" />
@@ -138,15 +204,15 @@ export default function WhyVoltXSection() {
           {mobileFeatures.map((f) => (
             <div
               key={f.title}
-              className="bg-surface-container p-6 rounded-xl flex flex-col items-center text-center"
+              className="bg-surface-container dark:bg-slate-800 p-6 rounded-xl flex flex-col items-center text-center"
             >
               <span className="material-symbols-outlined text-secondary text-3xl mb-4 leading-none">
                 {f.icon}
               </span>
-              <h4 className="font-bold text-sm font-headline uppercase mb-2">
+              <h4 className="font-bold text-sm font-headline uppercase mb-2 dark:text-slate-100">
                 {f.title}
               </h4>
-              <p className="text-xs text-on-surface-variant">{f.description}</p>
+              <p className="text-xs text-on-surface-variant dark:text-slate-400">{f.description}</p>
             </div>
           ))}
         </div>

@@ -1,6 +1,6 @@
 export default function AboutStorySection() {
   return (
-    <section className="py-24 bg-surface">
+    <section className="py-24 bg-surface dark:bg-slate-900">
       <div className="max-w-7xl mx-auto px-6">
         {/* Desktop: side-by-side text + image */}
         <div className="hidden md:grid grid-cols-2 gap-16 items-center">
@@ -8,10 +8,10 @@ export default function AboutStorySection() {
             <span className="uppercase tracking-[0.2em] font-bold text-secondary font-headline text-sm">
               Naša Priča
             </span>
-            <h2 className="text-4xl md:text-5xl font-headline font-bold text-primary tracking-tight">
+            <h2 className="text-4xl md:text-5xl font-headline font-bold text-primary dark:text-slate-100 tracking-tight">
               Više od desetljeća tehničke izvrsnosti
             </h2>
-            <div className="space-y-6 text-on-surface-variant leading-relaxed text-lg">
+            <div className="space-y-6 text-on-surface-variant dark:text-slate-400 leading-relaxed text-lg">
               <p>
                 Osnovan s vizijom pružanja vrhunskih usluga servisiranja, Volt X
                 je izrastao iz male obiteljske radionice u vodećeg pružatelja
@@ -31,7 +31,7 @@ export default function AboutStorySection() {
             </div>
           </div>
           <div className="relative">
-            <div className="absolute -inset-4 bg-surface-container-high rounded-xl -z-10 translate-x-4 translate-y-4" />
+            <div className="absolute -inset-4 bg-surface-container-high dark:bg-slate-700 rounded-xl -z-10 translate-x-4 translate-y-4" />
             <img
               src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=800&q=80"
               alt="Tehničar na djelu"
@@ -52,10 +52,10 @@ export default function AboutStorySection() {
             />
           </div>
           <div className="grid grid-cols-1 gap-8 items-start">
-            <h2 className="text-3xl font-headline font-bold tracking-tight text-primary">
+            <h2 className="text-3xl font-headline font-bold tracking-tight text-primary dark:text-slate-100">
               Naša Priča
             </h2>
-            <div className="space-y-6 text-on-surface-variant">
+            <div className="space-y-6 text-on-surface-variant dark:text-slate-400">
               <p>
                 Krenuli smo kao mali tim stručnjaka s jasnom misijom: osigurati
                 pouzdanu tehničku podršku za modernu industriju. Danas smo

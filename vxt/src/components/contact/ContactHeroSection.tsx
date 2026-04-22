@@ -2,12 +2,12 @@ export default function ContactHeroSection() {
   return (
     <>
       {/* Desktop hero */}
-      <header className="hidden md:block relative pt-32 pb-16 px-6 bg-surface-container-low overflow-hidden">
+      <header className="hidden md:block relative pt-32 pb-16 px-6 bg-surface-container-low dark:bg-slate-800 overflow-hidden">
         <div className="max-w-7xl mx-auto relative z-10">
-          <h1 className="text-5xl md:text-7xl font-black tracking-tighter text-primary mb-4 leading-none font-headline">
+          <h1 className="text-5xl md:text-7xl font-black tracking-tighter text-primary dark:text-slate-100 mb-4 leading-none font-headline">
             Kontaktirajte nas
           </h1>
-          <p className="text-on-surface-variant max-w-xl text-lg md:text-xl font-medium leading-relaxed">
+          <p className="text-on-surface-variant dark:text-slate-400 max-w-xl text-lg md:text-xl font-medium leading-relaxed">
             Vaš partner za brza i pouzdana rješenja servisiranja u Zadru i
             okolici. Tu smo za vas 24/7.
           </p>

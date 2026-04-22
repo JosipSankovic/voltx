@@ -40,7 +40,6 @@ const services: ServiceCard[] = [
   },
 ]
 
-// Mobile-specific service cards (3 cards per mobile design)
 const mobileServices: ServiceCard[] = [
   {
     icon: 'restaurant',
@@ -69,13 +68,13 @@ export default function ServicesSection() {
   return (
     <>
       {/* ── DESKTOP SERVICES ──────────────────────────────────────────── */}
-      <section className="hidden md:block py-24 bg-surface px-6">
+      <section className="hidden md:block py-24 bg-surface dark:bg-slate-900 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="mb-16">
             <span className="text-secondary font-label font-bold tracking-widest uppercase text-xs block mb-4">
               Naša Ekspertiza
             </span>
-            <h2 className="text-4xl md:text-5xl font-black font-headline text-primary-container tracking-tighter">
+            <h2 className="text-4xl md:text-5xl font-black font-headline text-primary-container dark:text-slate-100 tracking-tighter">
               Specijalizirane Usluge
             </h2>
           </div>
@@ -89,13 +88,13 @@ export default function ServicesSection() {
       </section>
 
       {/* ── MOBILE SERVICES ───────────────────────────────────────────── */}
-      <section className="md:hidden bg-surface-container-low py-16 px-6">
+      <section className="md:hidden bg-surface-container-low dark:bg-slate-800 py-16 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="mb-10">
             <span className="text-[0.75rem] font-bold uppercase tracking-[0.2em] text-secondary font-label">
               Naše Usluge
             </span>
-            <h2 className="text-3xl font-bold font-headline mt-2 text-primary">
+            <h2 className="text-3xl font-bold font-headline mt-2 text-primary dark:text-slate-100">
               Profesionalna Rješenja
             </h2>
           </div>
@@ -113,14 +112,14 @@ export default function ServicesSection() {
 
 function DesktopServiceCard({ icon, title, description, href }: ServiceCard) {
   return (
-    <div className="group bg-surface-container-low p-8 rounded-xl transition-all hover:bg-white hover:shadow-xl border-b-4 border-transparent hover:border-secondary">
+    <div className="group bg-surface-container-low dark:bg-slate-800 p-8 rounded-xl transition-all hover:bg-white dark:hover:bg-slate-700 hover:shadow-xl border-b-4 border-transparent hover:border-secondary">
       <div className="w-14 h-14 bg-primary-container text-white rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
         <span className="material-symbols-outlined text-3xl leading-none">{icon}</span>
       </div>
-      <h3 className="text-xl font-bold font-headline mb-3 text-primary-container">
+      <h3 className="text-xl font-bold font-headline mb-3 text-primary-container dark:text-slate-100 group-hover:text-secondary transition-colors">
         {title}
       </h3>
-      <p className="text-on-surface-variant text-sm leading-relaxed mb-6">
+      <p className="text-on-surface-variant dark:text-slate-400 text-sm leading-relaxed mb-6">
         {description}
       </p>
       <Link
@@ -138,19 +137,19 @@ function DesktopServiceCard({ icon, title, description, href }: ServiceCard) {
 
 function MobileServiceCard({ icon, title, description, href }: ServiceCard) {
   return (
-    <div className="bg-surface-container-lowest p-8 rounded-xl shadow-sm">
+    <div className="bg-surface-container-lowest dark:bg-slate-700 p-8 rounded-xl shadow-sm">
       <div className="w-12 h-12 bg-primary-container rounded-lg flex items-center justify-center mb-6 text-on-primary">
         <span className="material-symbols-outlined leading-none">{icon}</span>
       </div>
-      <h3 className="text-xl font-bold font-headline mb-3 text-primary">
+      <h3 className="text-xl font-bold font-headline mb-3 text-primary dark:text-slate-100">
         {title}
       </h3>
-      <p className="text-on-surface-variant leading-relaxed mb-6">
+      <p className="text-on-surface-variant dark:text-slate-400 leading-relaxed mb-6">
         {description}
       </p>
       <Link
         to={href}
-        className="flex items-center gap-2 text-primary font-bold text-sm uppercase tracking-wider"
+        className="flex items-center gap-2 text-primary dark:text-slate-300 font-bold text-sm uppercase tracking-wider"
       >
         <span>Saznaj više</span>
         <span className="material-symbols-outlined text-sm leading-none">

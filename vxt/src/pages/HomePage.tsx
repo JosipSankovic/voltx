@@ -5,8 +5,10 @@ import MobileCallBar from '../components/layout/MobileCallBar'
 import HeroSection from '../components/home/HeroSection'
 import ServicesSection from '../components/home/ServicesSection'
 import WhyVoltXSection from '../components/home/WhyVoltXSection'
+import TestimonialsSection from '../components/home/TestimonialsSection'
 import BrandsSection from '../components/home/BrandsSection'
 import ContactCTASection from '../components/home/ContactCTASection'
+import FloatingWhatsApp from '../components/ui/FloatingWhatsApp'
 
 export default function HomePage() {
   return (
@@ -23,12 +25,14 @@ export default function HomePage() {
         <HeroSection />
         <ServicesSection />
         <WhyVoltXSection />
+        <TestimonialsSection />
         <BrandsSection />
         <ContactCTASection />
       </main>
 
       <Footer />
       <MobileCallBar />
+      <FloatingWhatsApp />
     </div>
   )
 }

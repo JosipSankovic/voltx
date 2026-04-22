@@ -23,7 +23,7 @@ function BrandLink({ name, url }: { name: string; url: string }) {
       target="_blank"
       rel="noopener noreferrer"
       title={name}
-      className="font-headline font-black text-xl text-slate-700 tracking-tight hover:text-secondary transition-colors"
+      className="font-headline font-black text-xl text-slate-700 dark:text-slate-300 tracking-tight hover:text-secondary transition-colors"
     >
       {name}
     </a>
@@ -32,7 +32,7 @@ function BrandLink({ name, url }: { name: string; url: string }) {
 
 export default function BrandsSection() {
   return (
-    <section className="py-16 bg-white border-y border-outline-variant/10">
+    <section className="py-16 bg-white dark:bg-slate-900 border-y border-outline-variant/10 dark:border-white/5">
       <div className="max-w-7xl mx-auto px-6 space-y-10">
         {/* Authorized service */}
         <div>

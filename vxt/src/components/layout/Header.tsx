@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
+import { useTheme } from '../../context/ThemeContext'
 
 const navLinks = [
   { to: '/', label: 'Početna', end: true },
@@ -10,6 +11,7 @@ const navLinks = [
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const { isDark, toggle } = useTheme()
 
   return (
     <nav className="fixed top-0 w-full z-50 glass-nav shadow-sm">
@@ -17,7 +19,7 @@ export default function Header() {
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2">
           <img src="/logo_2.webp" alt="" className="h-8 w-auto" />
-          <span className="text-2xl font-black text-slate-900 tracking-tighter font-headline">
+          <span className="text-2xl font-black text-slate-900 dark:text-slate-100 tracking-tighter font-headline">
             Volt X
           </span>
         </Link>
@@ -32,7 +34,7 @@ export default function Header() {
               className={({ isActive }) =>
                 isActive
                   ? 'text-orange-600 font-bold border-b-2 border-orange-600 font-headline text-base tracking-tight'
-                  : 'text-slate-700 hover:text-orange-600 transition-colors duration-200 font-headline font-bold text-base tracking-tight'
+                  : 'text-slate-700 dark:text-slate-300 hover:text-orange-600 dark:hover:text-orange-400 transition-colors duration-200 font-headline font-bold text-base tracking-tight'
               }
             >
               {link.label}
@@ -40,8 +42,20 @@ export default function Header() {
           ))}
         </div>
 
-        {/* CTA + Mobile trigger */}
-        <div className="flex items-center gap-4">
+        {/* CTA + Dark toggle + Mobile trigger */}
+        <div className="flex items-center gap-3">
+          {/* Dark mode toggle */}
+          <button
+            onClick={toggle}
+            title={isDark ? 'Svjetla tema' : 'Tamna tema'}
+            className="w-9 h-9 rounded-lg border border-slate-200 dark:border-white/10 bg-white dark:bg-slate-800 flex items-center justify-center transition-all hover:brightness-110"
+            aria-label={isDark ? 'Svjetla tema' : 'Tamna tema'}
+          >
+            <span className="material-symbols-outlined text-[18px] leading-none text-slate-500 dark:text-amber-400">
+              {isDark ? 'light_mode' : 'dark_mode'}
+            </span>
+          </button>
+
           {/* Desktop CTA button */}
           <a
             href="tel:0917346442"
@@ -51,15 +65,15 @@ export default function Header() {
             091 734 6442
           </a>
 
-          {/* Mobile: phone number text (from mobile design) */}
+          {/* Mobile: phone number text */}
           <div className="flex md:hidden items-center gap-2">
-            <span className="material-symbols-outlined text-slate-900 text-xl leading-none">call</span>
-            <span className="font-headline font-bold text-slate-900 text-sm">091 734 6442</span>
+            <span className="material-symbols-outlined text-slate-900 dark:text-slate-100 text-xl leading-none">call</span>
+            <span className="font-headline font-bold text-slate-900 dark:text-slate-100 text-sm">091 734 6442</span>
           </div>
 
-          {/* Hamburger (optional – design shows it but mobile design uses sticky CTA) */}
+          {/* Hamburger */}
           <button
-            className="md:hidden text-primary ml-1"
+            className="md:hidden text-primary dark:text-slate-100 ml-1"
             aria-label="Otvori izbornik"
             onClick={() => setMobileMenuOpen((v) => !v)}
           >
@@ -72,7 +86,7 @@ export default function Header() {
 
       {/* Mobile dropdown menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-surface border-t border-outline-variant/20 px-6 py-4 flex flex-col gap-4">
+        <div className="md:hidden bg-surface dark:bg-slate-800 border-t border-outline-variant/20 dark:border-white/10 px-6 py-4 flex flex-col gap-4">
           {navLinks.map((link) => (
             <NavLink
               key={link.to}
@@ -82,7 +96,7 @@ export default function Header() {
               className={({ isActive }) =>
                 isActive
                   ? 'text-orange-600 font-bold font-headline text-base'
-                  : 'text-slate-700 font-bold font-headline text-base'
+                  : 'text-slate-700 dark:text-slate-300 font-bold font-headline text-base'
               }
             >
               {link.label}

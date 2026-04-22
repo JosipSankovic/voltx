@@ -6,23 +6,23 @@ import MobileCallBar from '../components/layout/MobileCallBar'
 
 export default function NotFoundPage() {
   return (
-    <div className="min-h-screen bg-surface text-on-background font-body">
+    <div className="min-h-screen bg-surface dark:bg-slate-900 text-on-background dark:text-slate-100 font-body">
       <Helmet>
         <title>Stranica nije pronađena | Volt X</title>
         <meta name="robots" content="noindex" />
       </Helmet>
       <Header />
       <main id="main-content" className="pt-32 px-6 max-w-7xl mx-auto text-center py-20">
-        <h1 className="text-6xl font-headline font-black text-primary mb-4">404</h1>
-        <p className="text-2xl font-headline font-bold text-on-surface-variant mb-4">Stranica nije pronađena</p>
-        <p className="text-on-surface-variant mb-12 max-w-md mx-auto">
+        <h1 className="text-6xl font-headline font-black text-primary dark:text-slate-100 mb-4">404</h1>
+        <p className="text-2xl font-headline font-bold text-on-surface-variant dark:text-slate-400 mb-4">Stranica nije pronađena</p>
+        <p className="text-on-surface-variant dark:text-slate-400 mb-12 max-w-md mx-auto">
           Tražena stranica ne postoji ili je premještena.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link to="/" className="px-8 py-4 bg-secondary text-white font-headline font-bold rounded-lg hover:brightness-110 transition-all">
             Povratak na početnu
           </Link>
-          <Link to="/usluge" className="px-8 py-4 border-2 border-primary text-primary font-headline font-bold rounded-lg hover:bg-primary hover:text-white transition-all">
+          <Link to="/usluge" className="px-8 py-4 border-2 border-primary dark:border-slate-400 text-primary dark:text-slate-300 font-headline font-bold rounded-lg hover:bg-primary dark:hover:bg-slate-700 hover:text-white dark:hover:text-white transition-all">
             Naše usluge
           </Link>
         </div>

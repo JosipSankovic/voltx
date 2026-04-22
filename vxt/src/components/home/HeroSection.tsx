@@ -69,22 +69,22 @@ export default function HeroSection() {
       </section>
 
       {/* ── MOBILE HERO ───────────────────────────────────────────────── */}
-      <section className="md:hidden px-6 pt-28 pb-12">
+      <section className="md:hidden px-6 pt-28 pb-12 dark:bg-slate-900">
         <div className="flex flex-col gap-8 max-w-7xl mx-auto">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 bg-surface-container-high px-3 py-1 rounded-full w-fit">
-            <span className="text-[0.65rem] font-bold uppercase tracking-[0.1em] text-on-surface-variant font-label">
+          <div className="inline-flex items-center gap-2 bg-surface-container-high dark:bg-slate-700 px-3 py-1 rounded-full w-fit">
+            <span className="text-[0.65rem] font-bold uppercase tracking-[0.1em] text-on-surface-variant dark:text-slate-300 font-label">
               Dostupni u Zadru i okolici
             </span>
           </div>
 
           {/* Headline */}
-          <p className="text-[2.75rem] leading-[1.1] font-bold tracking-tighter font-headline text-primary">
+          <p className="text-[2.75rem] leading-[1.1] font-bold tracking-tighter font-headline text-primary dark:text-slate-100">
             Servis ugostiteljske opreme i kućanskih aparata u Zadru
           </p>
 
           {/* Sub */}
-          <p className="text-lg text-on-surface-variant leading-relaxed max-w-xl">
+          <p className="text-lg text-on-surface-variant dark:text-slate-400 leading-relaxed max-w-xl">
             Pružamo brzu i stručnu tehničku podršku za vašu profesionalnu
             kuhinju ili kućanstvo. Kvaliteta, brzina i pouzdanost su naš
             prioritet.

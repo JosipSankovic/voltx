@@ -10,7 +10,7 @@ import ServiceHubCTASection from '../components/services/ServiceHubCTASection'
 
 export default function ServiceHubPage() {
   return (
-    <div className="min-h-screen bg-surface text-on-background font-body">
+    <div className="min-h-screen bg-surface dark:bg-slate-900 text-on-background dark:text-slate-100 font-body">
       <Helmet>
         <title>Usluge | Volt X – Servis opreme u Zadru</title>
         <meta name="description" content="Servis rashladnih sustava, termičke opreme, perilica posuđa i kućanskih aparata. Preventivno održavanje i rezervni dijelovi za ugostiteljsku opremu u Zadru." />

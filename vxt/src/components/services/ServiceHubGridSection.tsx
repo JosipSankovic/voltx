@@ -35,7 +35,7 @@ export const serviceItems = [
 
 export default function ServiceHubGridSection() {
   return (
-    <section className="py-24 bg-surface-container-low">
+    <section className="py-24 bg-surface-container-low dark:bg-slate-800">
       <div className="max-w-7xl mx-auto px-6">
         {/* Section header */}
         <div className="flex flex-col md:flex-row md:justify-between md:items-end mb-16 gap-6">
@@ -43,11 +43,11 @@ export default function ServiceHubGridSection() {
             <span className="text-secondary font-label text-xs uppercase tracking-widest font-bold block mb-4">
               Naše Usluge
             </span>
-            <h2 className="font-headline text-4xl md:text-5xl font-bold text-primary tracking-tight">
+            <h2 className="font-headline text-4xl md:text-5xl font-bold text-primary dark:text-slate-100 tracking-tight">
               Što sve servisiramo
             </h2>
           </div>
-          <p className="text-on-surface-variant font-body max-w-sm">
+          <p className="text-on-surface-variant dark:text-slate-400 font-body max-w-sm">
             Specijalizirani smo za održavanje kompletne linije termičke i
             rashladne opreme vodećih svjetskih proizvođača.
           </p>
@@ -58,17 +58,17 @@ export default function ServiceHubGridSection() {
             <Link
               key={item.slug}
               to={`/usluge/${item.slug}`}
-              className="bg-surface-container-lowest p-8 rounded-xl shadow-sm border-b-4 border-transparent block hover:border-secondary transition-colors"
+              className="bg-surface-container-lowest dark:bg-slate-700 p-8 rounded-xl shadow-sm border-b-4 border-transparent block hover:border-secondary transition-colors"
             >
-              <div className="w-14 h-14 bg-surface-container-high rounded-lg flex items-center justify-center mb-6 text-primary">
+              <div className="w-14 h-14 bg-surface-container-high dark:bg-slate-600 rounded-lg flex items-center justify-center mb-6 text-primary dark:text-slate-300">
                 <span className="material-symbols-outlined text-3xl">
                   {item.icon}
                 </span>
               </div>
-              <h3 className="font-headline text-xl font-bold mb-3 text-primary">
+              <h3 className="font-headline text-xl font-bold mb-3 text-primary dark:text-slate-100">
                 {item.title}
               </h3>
-              <p className="text-on-surface-variant text-sm leading-relaxed mb-4">
+              <p className="text-on-surface-variant dark:text-slate-400 text-sm leading-relaxed mb-4">
                 {item.desc}
               </p>
               <span className="inline-flex items-center gap-2 text-secondary font-bold text-sm">

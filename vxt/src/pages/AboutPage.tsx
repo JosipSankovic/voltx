@@ -10,7 +10,7 @@ import AboutCTASection from '../components/about/AboutCTASection'
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen bg-surface text-on-background font-body">
+    <div className="min-h-screen bg-surface dark:bg-slate-900 text-on-background dark:text-slate-100 font-body">
       <Helmet>
         <title>O nama | Volt X – Servis u Zadru</title>
         <meta name="description" content="Upoznajte tim Volt X — stručnjake za servis ugostiteljske opreme i kućanskih aparata s višegodišnjim iskustvom u Zadru i Dalmaciji." />

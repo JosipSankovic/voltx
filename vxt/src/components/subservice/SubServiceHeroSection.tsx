@@ -56,16 +56,16 @@ export default function SubServiceHeroSection({ service }: Props) {
       </section>
 
       {/* Mobile hero */}
-      <section className="md:hidden px-6 py-12 pt-28 max-w-7xl mx-auto">
+      <section className="md:hidden px-6 py-12 pt-28 max-w-7xl mx-auto dark:bg-slate-900">
         <div className="flex flex-col space-y-8">
           <div className="space-y-4">
             <span className="inline-block px-3 py-1 bg-secondary-fixed text-on-secondary-fixed-variant text-[0.75rem] font-bold tracking-wider uppercase font-label rounded">
               {service.categoryLabel}
             </span>
-            <h1 className="font-headline text-5xl font-extrabold text-primary leading-[1.1] tracking-tighter">
+            <h1 className="font-headline text-5xl font-extrabold text-primary dark:text-slate-100 leading-[1.1] tracking-tighter">
               {service.title}
             </h1>
-            <p className="text-on-surface-variant text-lg max-w-xl leading-relaxed">
+            <p className="text-on-surface-variant dark:text-slate-400 text-lg max-w-xl leading-relaxed">
               Vraćamo vašu opremu u pogon istog dana. Profesionalna dijagnostika
               i originalni rezervni dijelovi uz jamstvo na obavljeni rad.
             </p>

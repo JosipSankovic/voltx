@@ -22,22 +22,22 @@ export default function SubServiceFAQSection({ service }: Props) {
   }
 
   return (
-    <section className="py-24 bg-surface-container-low px-6">
+    <section className="py-24 bg-surface-container-low dark:bg-slate-800 px-6">
       <Helmet>
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
       </Helmet>
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl font-headline font-bold text-primary mb-12">
+        <h2 className="text-3xl font-headline font-bold text-primary dark:text-slate-100 mb-12">
           Često postavljana pitanja
         </h2>
         <div className="space-y-3">
           {service.faqs.map((faq, i) => (
             <div
               key={i}
-              className="bg-surface rounded-xl overflow-hidden border border-outline-variant"
+              className="bg-surface dark:bg-slate-900 rounded-xl overflow-hidden border border-outline-variant dark:border-white/10"
             >
               <button
-                className="w-full flex items-center justify-between p-6 text-left font-headline font-semibold text-on-surface hover:bg-surface-container transition-colors"
+                className="w-full flex items-center justify-between p-6 text-left font-headline font-semibold text-on-surface dark:text-slate-100 hover:bg-surface-container dark:hover:bg-slate-800 transition-colors"
                 onClick={() => setOpenIndex(openIndex === i ? null : i)}
                 aria-expanded={openIndex === i}
               >
@@ -53,7 +53,7 @@ export default function SubServiceFAQSection({ service }: Props) {
                 </span>
               </button>
               {openIndex === i && (
-                <div className="px-6 pb-6 text-on-surface-variant leading-relaxed">
+                <div className="px-6 pb-6 text-on-surface-variant dark:text-slate-400 leading-relaxed">
                   {faq.answer}
                 </div>
               )}

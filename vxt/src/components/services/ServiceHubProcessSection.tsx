@@ -27,15 +27,15 @@ const steps = [
 
 export default function ServiceHubProcessSection() {
   return (
-    <section className="py-24 bg-surface">
+    <section className="py-24 bg-surface dark:bg-slate-900">
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="font-headline text-4xl font-bold text-primary mb-16 text-center">
+        <h2 className="font-headline text-4xl font-bold text-primary dark:text-slate-100 mb-16 text-center">
           Proces servisiranja
         </h2>
 
         {/* Desktop: horizontal steps with connector line */}
         <div className="hidden md:grid grid-cols-4 gap-4 relative">
-          <div className="absolute top-8 left-0 w-full h-[2px] bg-surface-container-high z-0" />
+          <div className="absolute top-8 left-0 w-full h-[2px] bg-surface-container-high dark:bg-slate-700 z-0" />
           {steps.map((step) => (
             <div
               key={step.num}
@@ -52,10 +52,10 @@ export default function ServiceHubProcessSection() {
                   {step.num}
                 </span>
               </div>
-              <h4 className="font-bold text-primary mb-2 font-headline">
+              <h4 className="font-bold text-primary dark:text-slate-100 mb-2 font-headline">
                 {step.title}
               </h4>
-              <p className="text-sm text-on-surface-variant">{step.desc}</p>
+              <p className="text-sm text-on-surface-variant dark:text-slate-400">{step.desc}</p>
             </div>
           ))}
         </div>
@@ -66,7 +66,7 @@ export default function ServiceHubProcessSection() {
             <div className="w-20 h-1.5 bg-secondary mx-auto" />
           </div>
           <div className="space-y-12 relative">
-            <div className="absolute left-6 top-0 bottom-0 w-0.5 bg-outline-variant/30" />
+            <div className="absolute left-6 top-0 bottom-0 w-0.5 bg-outline-variant/30 dark:bg-white/10" />
             {steps.map((step) => (
               <div
                 key={step.num}
@@ -82,10 +82,10 @@ export default function ServiceHubProcessSection() {
                   {step.num}
                 </div>
                 <div className="pt-1">
-                  <h4 className="font-headline font-bold text-xl text-primary">
+                  <h4 className="font-headline font-bold text-xl text-primary dark:text-slate-100">
                     {step.title}
                   </h4>
-                  <p className="text-on-surface-variant mt-2 text-sm">
+                  <p className="text-on-surface-variant dark:text-slate-400 mt-2 text-sm">
                     {step.desc}
                   </p>
                 </div>

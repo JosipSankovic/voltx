@@ -8,7 +8,7 @@ import ContactMapSection from '../components/contact/ContactMapSection'
 
 export default function ContactPage() {
   return (
-    <div className="min-h-screen bg-surface text-on-background font-body">
+    <div className="min-h-screen bg-surface dark:bg-slate-900 text-on-background dark:text-slate-100 font-body">
       <Helmet>
         <title>Kontakt | Volt X – Servis u Zadru</title>
         <meta name="description" content="Kontaktirajte Volt X za hitni servis ili upit. Dostupni smo pon-pet 08-20h, subota 08-13h. Brzi odgovor garantiran." />

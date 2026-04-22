@@ -7,7 +7,7 @@ const areas = [
 
 export default function AboutServiceAreaSection() {
   return (
-    <section className="py-24 bg-surface">
+    <section className="py-24 bg-surface dark:bg-slate-900">
       <div className="max-w-7xl mx-auto px-6">
         <div className="bg-primary-container text-white rounded-[2rem] overflow-hidden flex flex-col lg:flex-row shadow-2xl">
           {/* Text side */}
@@ -38,16 +38,21 @@ export default function AboutServiceAreaSection() {
             </ul>
           </div>
 
-          {/* Map / image side */}
+          {/* Map side */}
           <div className="lg:w-1/2 h-[400px] lg:h-auto min-h-[400px] relative">
-            <img
-              src="https://images.unsplash.com/photo-1569336415962-a4bd9f69c07a?w=800&q=80"
-              alt="Karta Zadarske županije"
-              className="w-full h-full object-cover grayscale opacity-60"
+            <iframe
+              title="Zadarska županija na karti"
+              src="https://maps.google.com/maps?q=Zadarska+%C5%BEupanija,+Hrvatska&output=embed&z=9"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
               loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="absolute inset-0 w-full h-full"
             />
-            <div className="absolute inset-0 bg-primary/20" />
-            <div className="absolute inset-0 flex items-center justify-center">
+            <div className="absolute inset-0 bg-primary/20 pointer-events-none" />
+            <div className="absolute inset-0 flex items-end justify-start p-6 pointer-events-none">
               <div className="bg-secondary-container/90 backdrop-blur px-6 py-4 rounded-xl flex items-center space-x-3 text-white font-bold shadow-lg">
                 <span className="material-symbols-outlined">directions_car</span>
                 <span>Dostupni smo na terenu</span>

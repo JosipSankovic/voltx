@@ -17,17 +17,17 @@ export default function SubServicePage() {
 
   if (!service) {
     return (
-      <div className="min-h-screen bg-surface text-on-background font-body">
+      <div className="min-h-screen bg-surface dark:bg-slate-900 text-on-background dark:text-slate-100 font-body">
         <Helmet>
           <title>Usluga nije pronađena | Volt X</title>
           <meta name="robots" content="noindex" />
         </Helmet>
         <Header />
         <main id="main-content" className="pt-32 px-6 max-w-7xl mx-auto text-center py-20">
-          <h1 className="text-4xl font-headline font-bold text-primary mb-4">
+          <h1 className="text-4xl font-headline font-bold text-primary dark:text-slate-100 mb-4">
             Usluga nije pronađena
           </h1>
-          <p className="text-on-surface-variant mb-8">
+          <p className="text-on-surface-variant dark:text-slate-400 mb-8">
             Tražena usluga ne postoji ili je premještena.
           </p>
           <Link
@@ -45,7 +45,7 @@ export default function SubServicePage() {
   }
 
   return (
-    <div className="min-h-screen bg-surface text-on-background font-body">
+    <div className="min-h-screen bg-surface dark:bg-slate-900 text-on-background dark:text-slate-100 font-body">
       <Helmet>
         <title>{service.title} | Volt X – Zadar</title>
         <meta

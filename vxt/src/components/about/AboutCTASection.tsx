@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 export default function AboutCTASection() {
   return (
-    <section className="py-20 px-6">
+    <section className="py-20 px-6 dark:bg-slate-900">
       <div className="max-w-4xl mx-auto bg-primary rounded-2xl p-12 text-center text-white relative overflow-hidden">
         <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/10 rounded-full blur-3xl -mr-32 -mt-32" />
         <h2 className="text-3xl md:text-5xl font-headline font-bold mb-6 relative z-10">

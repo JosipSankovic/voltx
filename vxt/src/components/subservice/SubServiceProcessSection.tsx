@@ -31,9 +31,9 @@ const steps = [
 
 export default function SubServiceProcessSection() {
   return (
-    <section className="py-24 bg-surface px-6">
+    <section className="py-24 bg-surface dark:bg-slate-900 px-6">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl font-bold text-primary text-center mb-20 tracking-tight font-headline">
+        <h2 className="text-4xl font-bold text-primary dark:text-slate-100 text-center mb-20 tracking-tight font-headline">
           Proces u 4 koraka
         </h2>
 
@@ -42,7 +42,7 @@ export default function SubServiceProcessSection() {
           {steps.map((step) => (
             <div
               key={step.num}
-              className="relative p-8 bg-surface-container-low rounded-xl"
+              className="relative p-8 bg-surface-container-low dark:bg-slate-800 rounded-xl"
             >
               <span className="text-6xl font-black text-outline/20 absolute top-4 right-4 font-headline select-none">
                 {step.num}
@@ -54,16 +54,16 @@ export default function SubServiceProcessSection() {
               >
                 {step.icon}
               </span>
-              <h4 className="font-bold text-lg text-primary mb-2 font-headline">
+              <h4 className="font-bold text-lg text-primary dark:text-slate-100 mb-2 font-headline">
                 {step.title}
               </h4>
-              <p className="text-sm text-on-surface-variant">{step.desc}</p>
+              <p className="text-sm text-on-surface-variant dark:text-slate-400">{step.desc}</p>
             </div>
           ))}
         </div>
 
         {/* Mobile: vertical timeline */}
-        <div className="md:hidden relative space-y-12 before:absolute before:left-[19px] before:top-0 before:bottom-0 before:w-[2px] before:bg-surface-container-highest">
+        <div className="md:hidden relative space-y-12 before:absolute before:left-[19px] before:top-0 before:bottom-0 before:w-[2px] before:bg-surface-container-highest dark:before:bg-white/10">
           {steps.map((step) => (
             <div key={step.num} className="relative flex items-start space-x-8">
               <div
@@ -76,10 +76,10 @@ export default function SubServiceProcessSection() {
                 {step.num.replace('0', '')}
               </div>
               <div className="pt-1">
-                <h4 className="font-headline font-bold text-xl text-primary">
+                <h4 className="font-headline font-bold text-xl text-primary dark:text-slate-100">
                   {step.title}
                 </h4>
-                <p className="text-on-surface-variant mt-2">{step.desc}</p>
+                <p className="text-on-surface-variant dark:text-slate-400 mt-2">{step.desc}</p>
               </div>
             </div>
           ))}
