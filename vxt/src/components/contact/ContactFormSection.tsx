@@ -17,6 +17,7 @@ const contactInfoItems = [
     icon: 'mail',
     label: 'E-mail',
     primary: 'info@vxt.hr',
+    href: 'mailto:info@vxt.hr',
     secondary: null,
   },
   {
@@ -69,9 +70,18 @@ export default function ContactFormSection() {
                       <p className="text-sm font-bold uppercase tracking-widest text-secondary mb-1">
                         {item.label}
                       </p>
-                      <p className="text-xl font-semibold text-primary dark:text-slate-100">
-                        {item.primary}
-                      </p>
+                      {item.href ? (
+                        <a
+                          href={item.href}
+                          className="text-xl font-semibold text-primary dark:text-slate-100 hover:text-secondary transition-colors"
+                        >
+                          {item.primary}
+                        </a>
+                      ) : (
+                        <p className="text-xl font-semibold text-primary dark:text-slate-100">
+                          {item.primary}
+                        </p>
+                      )}
                       {item.secondary && (
                         <p className="text-lg text-on-surface-variant dark:text-slate-400">
                           {item.secondary}
