@@ -44,7 +44,7 @@ export default function AboutServiceAreaSection() {
           <div className="lg:w-1/2 h-[400px] lg:h-auto min-h-[400px] relative">
             <iframe
               title="Zadarska županija na karti"
-              src="https://maps.google.com/maps?q=Zadarska+%C5%BEupanija,+Hrvatska&output=embed&z=9"
+              src="https://maps.google.com/maps?ll=44.12,15.25&z=9&output=embed"
               width="100%"
               height="100%"
               style={{ border: 0 }}

@@ -15,7 +15,6 @@ export default function HeroSection() {
             src={HERO_IMAGE_DESKTOP}
             alt="Moderna profesionalna kuhinja s industrijskom opremom"
             className="w-full h-full object-cover brightness-[0.3]"
-            fetchPriority="high"
           />
           <div className="absolute inset-0 bg-gradient-to-tr from-primary to-transparent opacity-60" />
         </div>
@@ -88,7 +87,6 @@ export default function HeroSection() {
               src={HERO_IMAGE_MOBILE}
               alt="Tehničar popravlja industrijsku opremu"
               className="w-full h-full object-cover"
-              fetchPriority="high"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent" />
           </div>

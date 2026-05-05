@@ -1,25 +1,25 @@
 const TESTIMONIALS = [
   {
     name: 'Marko Jurić',
-    role: 'Vlasnik restorana "Konoba Bura"',
-    text: 'Rashladna komora nam je stala u petak navečer. Volt X je bio kod nas za dva sata i riješio problem do ponoći. Spasili su nam cijeli vikend.',
+    // role: 'Vlasnik restorana "Konoba Bura"',
+    text: 'Ledomat nam je stala u petak navečer. Volt X je bio kod nas za dva sata i riješio problem do ponoći. Spasili su nam cijeli vikend.',
     stars: 5,
   },
   {
     name: 'Ana Kovačević',
-    role: 'Privatna korisnica, Zadar',
-    text: 'Perilica rublja je počela curiti. Tehničar je došao sljedeće jutro, dijagnosticirao kvar i zamijenio pumpu za sat vremena. Uredno, profesionalno, bez skrivenih troškova.',
+    // role: 'Privatna korisnica, Zadar',
+    text: 'Curila mi je perilica, nazvala sam Volt X i već sljedeće jutro su bili tu. Zamjenili pumpu za sat vremena i sve u redu. Preporučam svima.',
     stars: 5,
   },
   {
     name: 'Ivan Perić',
-    role: 'Voditelj kuhinje, Hotel Diadora',
-    text: 'Imamo ugovor o preventivnom održavanju s Volt X-om već dvije godine. Od tada nismo imali nijedan neplanirani kvar. Vrijednost usluge je neusporediva s cijenom.',
+    // role: 'Voditelj kuhinje, Hotel Diadora',
+    text: 'Hauba na perilici nam je stala usred smjene. Nazvali smo Volt X, došli su isti dan i riješili kvar. Kuhinja nije stala ni sat vremena dulje nego što je trebala.',
     stars: 5,
   },
   {
     name: 'Petra Blažević',
-    role: 'Vlasnica kafića, Biograd',
+    // role: 'Vlasnica kafića, Biograd',
     text: 'Konvektomatu je otkazala elektronika usred sezone. Volt X je donio originalni modul i ugradio ga isti dan. Brzi, stručni i pristupačni.',
     stars: 5,
   },
@@ -74,9 +74,11 @@ export default function TestimonialsSection() {
                   <div className="font-headline font-bold text-[13px] text-on-surface dark:text-slate-100">
                     {t.name}
                   </div>
-                  <div className="font-body text-[11px] text-on-surface-variant dark:text-slate-400">
-                    {t.role}
-                  </div>
+                  {"role" in t ? (
+                    <div className="font-body text-[11px] text-on-surface-variant dark:text-slate-400">
+                      {t.role}
+                    </div>
+                  ) : null}
                 </div>
               </div>
             </div>
