@@ -26,12 +26,6 @@ export default function ContactHeroSection() {
       <section className="md:hidden px-6 mb-12 pt-24">
         <div className="relative overflow-hidden rounded-xl bg-primary-container p-8 min-h-[260px] flex flex-col justify-end">
           <div className="absolute inset-0 opacity-40">
-            <img
-              src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=800&q=80"
-              alt="Električni panel"
-              className="w-full h-full object-cover"
-              loading="lazy"
-            />
             <div className="absolute inset-0 bg-gradient-to-t from-primary-container via-transparent to-transparent" />
           </div>
           <div className="relative z-10">

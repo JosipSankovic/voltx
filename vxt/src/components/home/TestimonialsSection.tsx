@@ -19,7 +19,7 @@ const TESTIMONIALS = [
   },
   {
     name: 'Petra Blažević',
-    // role: 'Vlasnica kafića, Biograd',
+    role: null,
     text: 'Konvektomatu je otkazala elektronika usred sezone. Volt X je donio originalni modul i ugradio ga isti dan. Brzi, stručni i pristupačni.',
     stars: 5,
   },
