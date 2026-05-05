@@ -32,7 +32,7 @@ export default function AboutStorySection() {
           <div className="relative">
             <div className="absolute -inset-4 bg-surface-container-high dark:bg-slate-700 rounded-xl -z-10 translate-x-4 translate-y-4" />
             <img
-              src="o-nama-worker.webp"
+              src="images/o-nama-worker.webp"
               alt="Tehničar na djelu"
               className="w-full aspect-[4/5] object-cover rounded-xl shadow-xl"
               loading="lazy"
@@ -44,7 +44,7 @@ export default function AboutStorySection() {
         <div className="md:hidden">
           <div className="mb-12 rounded-xl overflow-hidden shadow-sm">
             <img
-              src="o-nama-worker.webp"
+              src="images/o-nama-worker.webp"
               alt="Volt X Inženjering"
               className="w-full h-[300px] object-cover"
               loading="lazy"

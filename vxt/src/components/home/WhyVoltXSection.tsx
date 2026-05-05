@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 
-const TECHNICIAN_IMAGE = '/pexels-bulat843-1243575272-34054468.webp'
+const TECHNICIAN_IMAGE = 'images/pexels-bulat843-1243575272-34054468.webp'
 
 function useAnimatedCounter(target: number, duration = 1600) {
   const [count, setCount] = useState(0)
