@@ -129,6 +129,20 @@ export default function ContactFormSection() {
                 Pon - Sub: 08:00 - 16:00
               </p>
             </div>
+            <div className="bg-surface-container-low dark:bg-slate-700 p-8 rounded-xl">
+              <span className="material-symbols-outlined text-secondary text-4xl mb-4 block">
+                mail
+              </span>
+              <h3 className="font-headline font-bold text-xl mb-2 dark:text-slate-100">
+                E-mail
+              </h3>
+              <a
+                href="mailto:info@vxt.hr"
+                className="text-on-surface-variant dark:text-slate-400 hover:text-secondary transition-colors leading-relaxed"
+              >
+                info@vxt.hr
+              </a>
+            </div>
           </div>
         </section>
 
