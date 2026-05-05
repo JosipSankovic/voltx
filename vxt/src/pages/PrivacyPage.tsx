@@ -19,8 +19,6 @@ export default function PrivacyPage() {
           <p>Volt X (Ulica XI/1, Petrčane, 23231) prikuplja sljedeće osobne podatke putem kontakt forme: ime, email adresa i broj telefona.</p>
           <h2 className="text-2xl font-headline font-bold text-primary dark:text-slate-100 mt-8">Svrha prikupljanja</h2>
           <p>Podaci se koriste isključivo za odgovor na vaš upit i koordinaciju servisa. Ne dijelimo vaše podatke s trećim stranama.</p>
-          <h2 className="text-2xl font-headline font-bold text-primary dark:text-slate-100 mt-8">Pohrana podataka</h2>
-          <p>Podaci se čuvaju onoliko dugo koliko je potrebno za rješavanje vašeg upita, a najdulje 2 godine.</p>
           <h2 className="text-2xl font-headline font-bold text-primary dark:text-slate-100 mt-8">Vaša prava</h2>
           <p>Imate pravo zatražiti uvid, ispravak ili brisanje svojih podataka. Kontaktirajte nas na: <a href="mailto:info@vxt.hr" className="text-secondary hover:underline">info@vxt.hr</a></p>
         </div>
