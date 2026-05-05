@@ -39,24 +39,6 @@ export default function SubServiceCTASection({ service }: Props) {
             </h2>
             <p className="font-medium opacity-90">{service.ctaText}</p>
           </div>
-          <div className="grid grid-cols-2 gap-4">
-            <div className="bg-white/10 p-4 rounded-lg backdrop-blur-sm">
-              <span className="block text-2xl font-black font-headline">
-                24h
-              </span>
-              <span className="text-xs uppercase tracking-widest font-bold opacity-80">
-                Odziv
-              </span>
-            </div>
-            <div className="bg-white/10 p-4 rounded-lg backdrop-blur-sm">
-              <span className="block text-2xl font-black font-headline">
-                6 mj
-              </span>
-              <span className="text-xs uppercase tracking-widest font-bold opacity-80">
-                Jamstvo
-              </span>
-            </div>
-          </div>
           <a
             href="tel:0917346442"
             className="w-full py-4 bg-white/20 hover:bg-white/30 transition-colors rounded-lg font-headline font-bold text-center text-lg tracking-tight"

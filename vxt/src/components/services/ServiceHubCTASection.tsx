@@ -19,7 +19,7 @@ export default function ServiceHubCTASection() {
           091 734 6442
         </a>
         <p className="mt-8 text-sm font-headline font-bold uppercase tracking-widest opacity-75">
-          Dostupni 24 sata dnevno za hitne slučajeve
+          Dostupni svaki dan za hitne slučajeve
         </p>
       </div>
     </section>

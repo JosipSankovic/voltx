@@ -39,7 +39,6 @@ const services: ServiceData[] = [
     whyItems: [
       'Dolazak na vašu adresu u najkraćem roku.',
       'Ovlašteni servis za punjenje rashladnih plinova.',
-      'Jamstvo na sve izvršene radove i ugrađene dijelove.',
     ],
     problems: [
       { icon: 'thermostat', title: 'Ne hladi dovoljno', desc: 'Nedostatak plina, prljavi kondenzator ili kvar kompresora.' },
@@ -51,8 +50,7 @@ const services: ServiceData[] = [
     ctaText: 'Kontaktirajte nas odmah i osigurajte sigurnost vaših namirnica.',
     faqs: [
       { question: 'Koliko traje servis rashladnog uređaja?', answer: 'Standardni servis traje 1-3 sata, ovisno o složenosti kvara. Na licu mjesta dobivate procjenu odmah.' },
-      { question: 'Koristite li originalne rezervne dijelove?', answer: 'Da, koristimo isključivo originalne ili certificirane OEM dijelove s jamstvom.' },
-      { question: 'Postoji li jamstvo na popravak?', answer: 'Da, jamčimo 6 mjeseci na sve obavljene radove i ugrađene dijelove.' },
+      { question: 'Koristite li originalne rezervne dijelove?', answer: 'Da, koristimo isključivo originalne ili certificirane OEM dijelove.' },
     ],
   },
   {
@@ -69,7 +67,6 @@ const services: ServiceData[] = [
     whyItems: [
       'Brza dijagnostika na licu mjesta.',
       'Originalni rezervni dijelovi za sve marke.',
-      'Pisano jamstvo na obavljeni servis.',
     ],
     problems: [
       { icon: 'thermostat', title: 'Ne postiže temperaturu', desc: 'Kvar grijača, termostata ili temperaturnog senzora.' },
@@ -97,7 +94,7 @@ const services: ServiceData[] = [
       'Vršimo ugradnju i zamjenu dozatora deterdženta i sjajila, odčepljavanje, čišćenje kamenca te popravak elektronike i upravljačkih ploča.',
     ],
     whyItems: [
-      'Servis perilica Meiko, Winterhalter, Hobart i dr.',
+      'Servis perilica Meiko, Winterhalter, Hobart, Elektrolux i dr.',
       'Usluga na terenu bez potrebe za odvozom uređaja.',
       'Brza dostava rezervnih dijelova.',
     ],
@@ -149,18 +146,18 @@ const services: ServiceData[] = [
     introHeading: 'Spriječite kvarove prije nego nastupe',
     introText: [
       'Redovito preventivno održavanje produljuje životni vijek vaše opreme, smanjuje troškove popravaka i osigurava nesmetano poslovanje.',
-      'Volt X nudi ugovore o redovitom servisiranju s dogovorenim terminima dolazaka, zamjenom trošnih dijelova i dokumentacijom svakog pregleda.',
+      'Preporučamo redovite preglede ugostiteljske opreme — idealno na početku i kraju sezone, prije nego kvar nastupi u najgorem trenutku.',
     ],
     whyItems: [
-      'Personalizirani plan održavanja za vaš objekt.',
-      'Prioritetni dolazak kod hitnih kvarova.',
-      'Popust na rezervne dijelove za ugovorne klijente.',
+      'Volt X predlaže termin pregleda — klijentu nije potrebno čekati zadnji tren.',
+      'Pregled uređaja po dogovoru, prilagođen potrebama vašeg objekta.',
+      'Pravovremeni servis smanjuje rizik od kvarova u sezoni.',
     ],
     problems: [
       { icon: 'calendar_today', title: 'Redoviti pregledi', desc: 'Kvartalni ili polugodinji pregledi svih uređaja.' },
       { icon: 'cleaning_services', title: 'Čišćenje i kalibracija', desc: 'Čišćenje kondenzatora, izmjenjivača i filtera.' },
       { icon: 'build', title: 'Zamjena trošnih dijelova', desc: 'Proaktivna zamjena brtvi, remena i ležajeva.' },
-      { icon: 'description', title: 'Servisna dokumentacija', desc: 'Detaljan izvještaj o svakom pregledu i intervenciji.' },
+      { icon: 'verified', title: 'Poštena procjena', desc: 'Uvijek vam kažemo što je stvarno potrebno — ništa više, ništa manje.' },
     ],
     ctaTitle: 'Zainteresirani za ugovor o održavanju?',
     ctaText: 'Kontaktirajte nas za individualni plan i cijenu.',
@@ -180,7 +177,6 @@ const services: ServiceData[] = [
     whyItems: [
       'Dolazak na vašu adresu u najkraćem roku.',
       'Transparentne cijene bez skrivenih troškova.',
-      'Jamstvo na sve izvršene radove i ugrađene dijelove.',
     ],
     problems: [
       { icon: 'thermostat', title: 'Ne grije vodu', desc: 'Najčešći uzrok je neispravan grijač ili termostat.' },

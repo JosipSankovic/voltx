@@ -8,8 +8,7 @@ export default function ContactHeroSection() {
             Kontaktirajte nas
           </h1>
           <p className="text-on-surface-variant dark:text-slate-400 max-w-xl text-lg md:text-xl font-medium leading-relaxed">
-            Vaš partner za brza i pouzdana rješenja servisiranja u Zadru i
-            okolici. Tu smo za vas 24/7.
+            Vaš partner za brza i pouzdana rješenja servisiranja u Zadru i okolici. Dostupni svakodnevno, tu kada nas trebate.
           </p>
         </div>
         {/* Decorative icon */}

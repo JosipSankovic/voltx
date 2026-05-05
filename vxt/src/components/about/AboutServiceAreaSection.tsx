@@ -3,6 +3,8 @@ const areas = [
   'Biograd na Moru',
   'Otoci Ugljan i Pašman',
   'Zaleđe i Ravni Kotari',
+  'Novalja i Pag',
+  'Vodice'
 ]
 
 export default function AboutServiceAreaSection() {
@@ -19,12 +21,12 @@ export default function AboutServiceAreaSection() {
               </span>
             </div>
             <h2 className="text-4xl font-headline font-extrabold mb-6 leading-tight">
-              Pokrivamo cijelu Zadarsku županiju
+              Pokrivamo Zadarsku, dio Ličko-senjske i Šibensko-kninske županije
             </h2>
             <p className="text-on-primary-container text-lg mb-8">
               Od otoka do zaleđa, Volt X tim je na terenu. Naša mobilna ekipa
               opremljena je za brze intervencije i velike projekte na području
-              Zadra, Biograda, Nina i cijelog zaleđa.
+              Zadra, Biograda, Nina, Paga, Novalje, Vodica i okolnog zaleđa.
             </p>
             <ul className="grid grid-cols-2 gap-4">
               {areas.map((area) => (

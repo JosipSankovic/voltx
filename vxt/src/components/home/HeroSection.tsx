@@ -22,14 +22,6 @@ export default function HeroSection() {
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 w-full">
           <div className="lg:col-span-8 space-y-8">
-            {/* 24/7 badge */}
-            <div className="inline-flex items-center gap-4 py-2 px-4 bg-secondary/20 border border-secondary/30 rounded-full backdrop-blur-md">
-              <span className="w-2 h-2 rounded-full bg-secondary animate-pulse" />
-              <span className="text-secondary-fixed text-xs font-bold tracking-widest uppercase font-label">
-                Dostupni 24/7 za hitne intervencije
-              </span>
-            </div>
-
             {/* Headline */}
             <h1 className="text-5xl lg:text-7xl font-black text-white font-headline leading-[0.95] tracking-tighter">
               Servis ugostiteljske opreme i kućanskih aparata u Zadru

@@ -14,6 +14,11 @@ const authorizedBrands = [
 const additionalBrands = [
   { name: 'Winterhalter', url: 'https://www.winterhalter.com' },
   { name: 'Rational', url: 'https://www.rational-online.com' },
+  { name: 'Dihr', url: 'https://www.dihr.com' },
+  { name: 'Krupps', url: 'https://www.krupps.com' },
+  { name: 'Lotus', url: 'https://lotuscooking.com/' },
+  { name: 'Kogast', url: 'https://www.kogast.com' },
+  { name: 'Elettrobar', url: 'https://www.elettrobar.it' },
 ]
 
 function BrandLink({ name, url }: { name: string; url: string }) {

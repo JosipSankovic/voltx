@@ -22,8 +22,7 @@ const contactInfoItems = [
   {
     icon: 'schedule',
     label: 'Radno vrijeme',
-    primary: 'Pon - Pet: 08:00 - 20:00',
-    secondary: 'Subota: 08:00 - 13:00',
+    primary: 'Pon - Sub: 08:00 - 16:00',
   },
 ]
 
@@ -117,9 +116,7 @@ export default function ContactFormSection() {
                 Radno Vrijeme
               </h3>
               <p className="text-on-surface-variant dark:text-slate-400 leading-relaxed">
-                Pon - Pet: 08:00 - 20:00
-                <br />
-                Subota: 08:00 - 13:00
+                Pon - Sub: 08:00 - 16:00
               </p>
             </div>
           </div>

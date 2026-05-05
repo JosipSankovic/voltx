@@ -59,7 +59,7 @@ const mobileServices: ServiceCard[] = [
     icon: 'ac_unit',
     title: 'Rashladni Sustavi',
     description:
-      'Montaža i servis klima uređaja te rashladnih komora za komercijalnu i privatnu upotrebu uz jamstvo na rad.',
+      'Montaža i servis klima uređaja te rashladnih komora za komercijalnu i privatnu upotrebu.',
     href: '/usluge/rashladni-sustavi',
   },
 ]

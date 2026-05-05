@@ -24,7 +24,7 @@ const steps = [
     num: '04',
     icon: 'task_alt',
     title: 'Testiranje',
-    desc: 'Provjera rada aparata i izdavanje pisanog jamstva.',
+    desc: 'Provjera rada uređaja u radnim uvjetima.',
     highlight: true,
   },
 ]

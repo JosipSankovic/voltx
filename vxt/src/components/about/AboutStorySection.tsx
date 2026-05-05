@@ -18,15 +18,14 @@ export default function AboutStorySection() {
                 tehničkih rješenja u Zadarskoj županiji.
               </p>
               <p>
-                Naša misija je jednostavna: osigurati sigurnost, učinkovitost i
-                inovaciju u svakom ugostiteljskom objektu i domu u koji uđemo.
+                Naša misija je jednostavna: osigurati sigurnost i učinkovitost
+                u svakom ugostiteljskom objektu i domu u koji uđemo.
                 Svaki projekt tretiramo kao vlastiti, koristeći samo
                 najkvalitetnije materijale i najnovije industrijske standarde.
               </p>
               <p>
-                Tim stručnjaka pod vodstvom iskusnih inženjera svakodnevno radi
-                na unapređenju lokalne infrastrukture, pružajući podršku našim
-                sugrađanima 24 sata dnevno.
+                Naš tim iskusnih servisera dostupan je svakodnevno — brzo, pouzdano
+                i bez dugog čekanja.
               </p>
             </div>
           </div>

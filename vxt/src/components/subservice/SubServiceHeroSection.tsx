@@ -67,7 +67,7 @@ export default function SubServiceHeroSection({ service }: Props) {
             </h1>
             <p className="text-on-surface-variant dark:text-slate-400 text-lg max-w-xl leading-relaxed">
               Vraćamo vašu opremu u pogon istog dana. Profesionalna dijagnostika
-              i originalni rezervni dijelovi uz jamstvo na obavljeni rad.
+              i originalni rezervni dijelovi.
             </p>
           </div>
           <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden shadow-2xl">

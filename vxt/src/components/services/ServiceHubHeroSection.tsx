@@ -47,7 +47,7 @@ export default function ServiceHubHeroSection() {
       >
         <div className="max-w-7xl mx-auto flex flex-col items-center text-center">
           <div className="mb-6 inline-block bg-secondary px-4 py-1 rounded-full text-white font-label text-[10px] uppercase tracking-[0.2em] font-bold">
-            Profesionalni Servis 24/7
+            Profesionalni Servis
           </div>
           <h1 className="font-headline text-5xl font-bold text-white tracking-tight leading-[1.1] mb-8 max-w-4xl">
             Servis ugostiteljske opreme

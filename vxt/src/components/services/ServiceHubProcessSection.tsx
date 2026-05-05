@@ -19,8 +19,8 @@ const steps = [
   },
   {
     num: '4',
-    title: 'Testiranje i jamstvo',
-    desc: 'Provjera rada uređaja u radnim uvjetima i izdavanje pisanog jamstva.',
+    title: 'Testiranje',
+    desc: 'Provjera rada uređaja u radnim uvjetima.',
     highlight: true,
   },
 ]

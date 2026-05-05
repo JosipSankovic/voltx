@@ -1,5 +1,5 @@
 const stats = [
-  { value: '24/7', label: 'Hitne intervencije' },
+  { value: '10+', label: 'Godina iskustva' },
   { value: '98%', label: 'Uspješnih popravaka' },
 ]
 

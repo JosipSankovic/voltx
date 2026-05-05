@@ -13,12 +13,7 @@ const values = [
     icon: 'verified_user',
     title: 'Apsolutna Sigurnost',
     desc: 'Sigurnost korisnika i opreme je naš apsolutni prioritet u svakom koraku projektiranja i izvedbe.',
-  },
-  {
-    icon: 'security',
-    title: 'Jamstvo',
-    desc: 'Na sve naše radove i ugrađene materijale dajemo višegodišnje pismeno jamstvo.',
-  },
+  }
 ]
 
 export default function AboutValuesSection() {
@@ -35,27 +30,31 @@ export default function AboutValuesSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {values.map((v) => (
-            <div
-              key={v.title}
-              className="bg-surface-container-lowest dark:bg-slate-700 p-8 rounded-xl shadow-sm border-b-2 border-transparent hover:border-secondary transition-all duration-300"
-            >
-              <div className="w-12 h-12 bg-secondary/10 flex items-center justify-center rounded-lg mb-6">
-                <span
-                  className="material-symbols-outlined text-secondary"
-                  style={{ fontVariationSettings: "'FILL' 1" }}
-                >
-                  {v.icon}
-                </span>
-              </div>
-              <h3 className="font-headline font-bold text-xl text-primary dark:text-slate-100 mb-3">
-                {v.title}
-              </h3>
-              <p className="text-on-surface-variant dark:text-slate-400 text-sm">{v.desc}</p>
-            </div>
-          ))}
-        </div>
+        <div className="flex flex-wrap justify-center gap-6 max-w-6xl mx-auto">
+  {values.map((v) => (
+    <div
+      key={v.title}
+      className="w-full sm:w-[calc(50%-12px)] lg:w-[calc(33%-18px)] bg-surface-container-lowest dark:bg-slate-700 p-8 rounded-xl shadow-sm border-b-2 border-transparent hover:border-secondary transition-all duration-300"
+    >
+      <div className="w-12 h-12 bg-secondary/10 flex items-center justify-center rounded-lg mb-6">
+        <span
+          className="material-symbols-outlined text-secondary"
+          style={{ fontVariationSettings: "'FILL' 1" }}
+        >
+          {v.icon}
+        </span>
+      </div>
+
+      <h3 className="font-headline font-bold text-xl text-primary dark:text-slate-100 mb-3">
+        {v.title}
+      </h3>
+
+      <p className="text-on-surface-variant dark:text-slate-400 text-sm">
+        {v.desc}
+      </p>
+    </div>
+  ))}
+</div>
       </div>
     </section>
   )

@@ -17,7 +17,7 @@ export default function AboutHeroSection() {
             O Volt X-u
           </h1>
           <p className="text-primary-fixed-dim max-w-xl text-lg font-medium leading-relaxed">
-            Vaš pouzdani partner za servis i popravak ugostiteljske opreme i
+            Vaš pouzdani partner za servis i prodaju ugostiteljske opreme te popravak
             kućanskih aparata u Zadru i okolici. Spajamo industrijsku preciznost
             s lokalnom posvećenošću.
           </p>
