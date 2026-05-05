@@ -30,7 +30,7 @@ const services: ServiceData[] = [
     title: 'Servis rashladnih sustava',
     categoryLabel: 'Rashladna tehnika',
     headline: 'Servis rashladnih\nsustava',
-    heroImage: 'https://images.unsplash.com/photo-1551218808-94e220e084d2?w=1600&q=80',
+    heroImage: '/images/pexels-bulat843-1243575272-34054468.webp',
     introHeading: 'Stručni servis za sve rashladne uređaje',
     introText: [
       'Rashladna tehnika je srce svake profesionalne kuhinje i rashladnog lanca. Volt X pruža kompletan servis hladnjaka, zamrzivača, rashladnih vitrina, ledomata i rashladnih komora.',
@@ -58,7 +58,7 @@ const services: ServiceData[] = [
     title: 'Servis termičke opreme',
     categoryLabel: 'Termička oprema',
     headline: 'Servis termičke\nopreme',
-    heroImage: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=1600&q=80',
+    heroImage: '/images/barbara-burgess-v9jraQ0tM9A-unsplash.webp',
     introHeading: 'Precizni popravci za pećnice i roštiljeve',
     introText: [
       'Termička oprema mora raditi besprijekorno u svakom trenutku. Volt X servisira sve vrste konvekcijskih pećnica, konvektomata, pizza peći, štednjaka i industrijskih friteza.',
@@ -87,7 +87,7 @@ const services: ServiceData[] = [
     title: 'Servis perilica posuđa',
     categoryLabel: 'Perilice posuđa',
     headline: 'Servis perilica\nposuđa',
-    heroImage: 'https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=1600&q=80',
+    heroImage: '/images/pexels-bulat843-1243575272-34054468.webp',
     introHeading: 'Čisto posuđe, zadovoljni gosti',
     introText: [
       'Profesionalne perilice čaša, tanjura i crnog posuđa zahtijevaju redovito održavanje. Volt X servisira sve tipove perilica od jednostavnih modela do tunelskih industrijskih sustava.',
@@ -142,7 +142,7 @@ const services: ServiceData[] = [
     title: 'Preventivno održavanje',
     categoryLabel: 'Preventiva',
     headline: 'Preventivno\nodržavanje opreme',
-    heroImage: 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=1600&q=80',
+    heroImage: '/images/pexels-bulat843-1243575272-32588551.webp',
     introHeading: 'Spriječite kvarove prije nego nastupe',
     introText: [
       'Redovito preventivno održavanje produljuje životni vijek vaše opreme, smanjuje troškove popravaka i osigurava nesmetano poslovanje.',
