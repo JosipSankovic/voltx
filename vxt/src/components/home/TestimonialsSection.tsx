@@ -2,7 +2,7 @@ const TESTIMONIALS = [
   {
     name: 'Marko Jurić',
     // role: 'Vlasnik restorana "Konoba Bura"',
-    text: 'Ledomat nam je stala u petak navečer. Volt X je bio kod nas za dva sata i riješio problem do ponoći. Spasili su nam cijeli vikend.',
+    text: 'Hauba perilica nam je stala u petak navečer. Volt X je bio kod nas za dva sata i riješio problem. Spasili su nam cijeli vikend.',
     stars: 5,
   },
   {
