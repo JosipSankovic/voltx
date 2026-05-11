@@ -1,6 +1,12 @@
 Options -MultiViews
 RewriteEngine On
 RewriteBase /
+
+# Preusmjeri www na non-www
+RewriteCond %{HTTP_HOST} ^www\.vxt\.hr$ [NC]
+RewriteRule ^(.*)$ https://vxt.hr/$1 [R=301,L]
+
+
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^ index.html [QSA,L]
