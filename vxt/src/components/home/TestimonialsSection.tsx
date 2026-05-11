@@ -14,7 +14,7 @@ const TESTIMONIALS = [
   {
     name: 'Ivan Perić',
     // role: 'Voditelj kuhinje, Hotel Diadora',
-    text: 'Hauba na perilici nam je stala usred smjene. Nazvali smo Volt X, došli su isti dan i riješili kvar. Kuhinja nije stala ni sat vremena dulje nego što je trebala.',
+    text: 'Hauba perilica nam je stala usred smjene. Nazvali smo Volt X, došli su isti dan i riješili kvar. Kuhinja nije stala ni sat vremena dulje nego što je trebala.',
     stars: 5,
   },
   {

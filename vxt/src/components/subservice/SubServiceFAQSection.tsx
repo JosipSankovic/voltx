@@ -18,7 +18,7 @@ export default function SubServiceFAQSection({ service }: Props) {
       '@type': 'Question',
       name: faq.question,
       acceptedAnswer: { '@type': 'Answer', text: faq.answer },
-    })),
+    }))
   }
 
   return (
