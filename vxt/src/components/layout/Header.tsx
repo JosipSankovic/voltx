@@ -5,6 +5,7 @@ import { useTheme } from '../../context/ThemeContext'
 const navLinks = [
   { to: '/', label: 'Početna', end: true },
   { to: '/usluge', label: 'Usluge', end: false },
+  { to: '/prodaja-opreme', label: 'Prodaja', end: true },
   { to: '/o-nama', label: 'O nama', end: true },
   { to: '/kontakt', label: 'Kontakt', end: true },
 ]

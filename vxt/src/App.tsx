@@ -7,6 +7,7 @@ import ContactPage from './pages/ContactPage'
 import ServiceHubPage from './pages/ServiceHubPage'
 import SubServicePage from './pages/SubServicePage'
 import PrivacyPage from './pages/PrivacyPage'
+import ProdajaOpremePage from './pages/ProdajaOpremePage'
 import NotFoundPage from './pages/NotFoundPage'
 
 function ScrollToTop() {
@@ -28,6 +29,7 @@ export default function App() {
         <Route path="/kontakt" element={<ContactPage />} />
         <Route path="/usluge" element={<ServiceHubPage />} />
         <Route path="/usluge/:slug" element={<SubServicePage />} />
+        <Route path="/prodaja-opreme" element={<ProdajaOpremePage />} />
         <Route path="/privatnost" element={<PrivacyPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>

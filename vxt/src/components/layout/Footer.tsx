@@ -37,6 +37,12 @@ export default function Footer() {
             Kontakt
           </Link>
           <Link
+            to="/prodaja-opreme"
+            className="text-slate-400 hover:text-white transition-colors font-body text-sm"
+          >
+            Prodaja opreme
+          </Link>
+          <Link
             to="/privatnost"
             className="text-slate-400 hover:text-white transition-colors font-body text-sm"
           >

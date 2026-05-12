@@ -15,7 +15,7 @@ const services: ServiceCard[] = [
     title: 'Prodaja ugostiteljske opreme',
     description:
       'Premium oprema svjetskih brendova za restorane, hotele i kafiće.',
-    href: '/usluge',
+    href: '/prodaja-opreme',
   },
   {
     icon: 'construction',
