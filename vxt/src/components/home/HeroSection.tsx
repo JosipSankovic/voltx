@@ -23,7 +23,7 @@ export default function HeroSection() {
           <div className="lg:col-span-8 space-y-8">
             {/* Headline */}
             <h1 className="text-5xl lg:text-7xl font-black text-white font-headline leading-[0.95] tracking-tighter">
-              Servis ugostiteljske opreme i kućanskih aparata u Zadru
+              Servis i prodaja ugostiteljske opreme i servis kućanskih aparata u Zadru
             </h1>
 
             {/* Sub */}
@@ -71,7 +71,7 @@ export default function HeroSection() {
 
           {/* Headline */}
           <p className="text-[2.75rem] leading-[1.1] font-bold tracking-tighter font-headline text-primary dark:text-slate-100">
-            Servis ugostiteljske opreme i kućanskih aparata u Zadru
+            Servis i prodaja ugostiteljske opreme i servis kućanskih aparata u Zadru
           </p>
 
           {/* Sub */}
