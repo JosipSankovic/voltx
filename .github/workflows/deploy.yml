@@ -1,0 +1,43 @@
+name: Build and deploy to server
+
+# Runs on every push to master, and can also be triggered manually
+# from the GitHub "Actions" tab (workflow_dispatch).
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: vxt/package-lock.json
+
+      - name: Install dependencies
+        working-directory: vxt
+        run: npm ci
+
+      - name: Build site
+        working-directory: vxt
+        run: npm run build
+
+      - name: Deploy via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          # The built site lives in vxt/dist/ after `npm run build`.
+          local-dir: vxt/dist/
+          # Web root on the server, e.g. public_html/ (MUST end with a slash).
+          server-dir: ${{ secrets.FTP_SERVER_DIR }}
+          # Secure FTP over TLS. If your host rejects it, change to: ftp
+          protocol: ftps
